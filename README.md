@@ -10,11 +10,8 @@
 
 This project was created by **GreenerToday** and is deployed and can be accessed at [http://your-deployed-link.com](http://your-deployed-link.com).
 
-
-# ABOUT SUBMISSION
-
-[Intro](#intro)
-[Goal](#goal)
+[Intro](#intro)  
+[Goal](#goal)  
 [User Stories](#user-stories)  
 [Wireframes](#wireframes)  
 [Colour Scheme](#colour-scheme)  
@@ -36,14 +33,14 @@ The goal section provides a concise summary of the main objective or purpose of 
 ## User Stories
 
 - As I user I want to be able to search the charging stations
-- As a user I want to be able to see how far the charging station is from my location
-- As a user I want to be able to contact the website provider
-- As a user I want to able to understand the purpose of the website instantly.
-- As a user I want to able to navigate the website effortlesly
 - As a user I want to be able to see more information about the charging point
+- As a user I want to be able to provide feedback about the charging points
+- As a user I want to able to understand the purpose of the website instantly
+- As a user I want to able to navigate the website effortlessly
+- As a user I want to be able to contact the website provider
 
 Nice to have:
-- as I user I want to be able to save journeys and my favourite charging stations
+- As I user I want to be able to save journeys and add charging stations to my favourites
 
 ## Wireframes
 
