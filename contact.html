@@ -35,20 +35,23 @@
                 Contact us
             </h2>
             <ul>
-                <li>Have you come across a charging point not on our map?</li>
-                <li>Is there further information it would be helpful for others to know about a charging point?</li>
-                <li>Do you have any suggestions for how this website could be further improved?</li>
+                <li class="contact-reason-points">Have you come across a charging point not on our map?</li>
+                <li class="contact-reason-points">Is there further information it would be helpful for others to know about a charging point?</li>
+                <li class="contact-reason-points">Do you have any suggestions for how this website could be further improved?</li>
             </ul>
-            <p>Then we would love to hear from you:</p>
+            <p><strong>Then we would love to hear from you!</strong></p>
+            <hr>
             <form action="" class="">
                 <!-- Gain user information -->
-                <div>
+                <div class="form-item">
                     <label for="name">Name:</label>
                     <input
                         type="text"
                         id="name"
                         name="name"
-                        required >  
+                        required >
+                </div>
+                <div class="form-item">
                     <label for="email">Email:</label>
                     <input
                         type="email"
@@ -57,8 +60,9 @@
                         required >
                 </div>
                 <!-- Clarify reason for contact -->
-                <div>
+                <div class="form-item">
                     <label for="contact-reason">What would you like to contact us about?</label>
+                    <br>
                     <select id="contact-reason" name="contact-reason" required>
                       <option value="existing-charging-point">An existing charging point</option>
                       <option value="new-charging-point">A new charging point</option>
@@ -66,12 +70,13 @@
                     </select>
                 </div>
                 <!-- User comment -->
-                <div>
-                    <label for="comment">Your comment: Please provide us with as much detail as possible</label>
+                <div class="form-item">
+                    <label for="comment">Your comment:</label>
                     <br>
                     <textarea
                         id="comment"
                         name="comment"
+                        placeholder="Please provide us with as much detail as possible"
                         required>
                     </textarea>
                 </div>

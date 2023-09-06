@@ -1,12 +1,7 @@
 /* Across site styling */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
+    margin: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,6 +14,10 @@ main {
     margin-right: 5%;
     margin-left: 5%;
     flex-grow: 1;
+}
+
+h1, h2 {
+    text-align: center;
 }
 
 /* Header specific styling */
@@ -75,4 +74,51 @@ footer {
     padding: 2em;
     margin-top: 4em;
     margin-bottom: 4em;
+  }
+
+  #contact-us-container > h2 {
+    margin-top: 0;
+  }
+
+  #contact-us-container > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .contact-reason-points {
+    margin-bottom: 1em;
+  }
+
+  #contact-us-container > p {
+    text-align: center;
+  }
+
+  form {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-item {
+    margin-bottom: 1em;
+  }
+
+  input {
+    width: 14em;
+  }
+
+  select {
+    width: 18em;
+  }
+
+  textarea {
+    width: 18em;
+    height: 10em;
+  }
+
+  #submit-button {
+    margin-left: 5em;
+    width: 8em;
+    padding: 0.5em;
+    border-radius: 5px;
   }
