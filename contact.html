@@ -28,37 +28,48 @@
                 Intro to form
             </p>
             <form action="" class="">
-                <label for="name">Name:</label>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required >  
-                <label for="email">Email:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required >
-                <br>
-                <label for="question-1">Question</label>
-                <br>
-                <textarea
-                    id="question-1"
-                    name="question-1">
-                </textarea>
+                <!-- Gain user information -->
+                <div>
+                    <label for="name">Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required >  
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required >
+                </div>
+                <!-- Clarify reason for contact -->
+                <div>
+                    <label for="contact-reason">What would you like to contact us about?</label>
+                    <select id="contact-reason" name="contact-reason" required>
+                      <option value="existing-charging-point">An existing charging point</option>
+                      <option value="new-charging-point">A new charging point</option>
+                      <option value="website-suggestion">Website suggestion</option>
+                    </select>
+                </div>
+                <!-- User comment -->
+                <div>
+                    <label for="comment">Your comment: Please provide us with as much detail as possible</label>
+                    <br>
+                    <textarea
+                        id="comment"
+                        name="comment"
+                        required>
+                    </textarea>
+                </div>
+                <!-- Submit the form -->
                 <input 
                     type="submit"
                     value="Submit"
                     id="submit-button">
             </form>
-                
-
+        </section>
     <div>
-
-    
-
-
 
     <!-- Link to the JavaScript file -->
     <script src="assets/js/script.js"></script>
