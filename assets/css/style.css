@@ -32,7 +32,7 @@ h1, h2 {
 header {
     width: 100%;
     background-color: #FFFFFF;
-    height: 4rem;
+    height: 6rem;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -40,6 +40,11 @@ header {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+    margin-left: 1em;
 }
 
 nav ul {
@@ -50,12 +55,14 @@ nav ul {
 
 nav li {
     display: inline-block;
-    line-height: 2rem;
-    padding-right: 2rem;
+    line-height: 4rem;
+    padding-right: 1.5rem;
 }
 
 nav li a {
-  color: #000;
+  color: #42850F;
+  font-size: 1.5em;
+  text-decoration: none;
 }
 
 /* Footer specific styling */
@@ -139,7 +146,6 @@ footer {
 
 .main-index {
   background-color: white;
-  margin-top: 0;
 }
 
 .map {
