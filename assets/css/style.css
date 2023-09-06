@@ -61,3 +61,18 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+
+  /* Contact Us page specific */
+
+  #contact-us-container {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    margin: 0 auto;
+    border-radius: 25px;
+    width: 60%;
+    min-width: 20em;
+    padding: 2em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
