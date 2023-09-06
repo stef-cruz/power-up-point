@@ -50,6 +50,10 @@ nav li {
     padding-right: 2rem;
 }
 
+nav li a {
+  color: #000;
+}
+
 /* Footer specific styling */
 
 footer {
