@@ -19,6 +19,10 @@ main {
     font-family: 'Anonymous Pro', monospace;
 }
 
+h1 {
+    font-weight: 700;
+  }
+
 h1, h2 {
     text-align: center;
 }
@@ -72,6 +76,7 @@ footer {
 
   #contact-us-container {
     box-sizing: border-box;
+    
     background-color: #CECECE;
     border: 1px solid black;
     margin: 0 auto;
@@ -194,6 +199,7 @@ footer {
   background: linear-gradient(165deg, rgba(53,151,16, 0.95) 50%, rgba(65,185,20, 0.75) 100%);
 }
 
+/* This is now covered in universal h1 styling */
 .hero h1 {
   font-weight: 700;
 }
