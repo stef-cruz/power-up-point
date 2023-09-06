@@ -79,15 +79,15 @@ footer {
     justify-content: space-between;
   }
 
-  /* Contact Us page specific */
+/* Contact Us page specific */
 
-  .contact-reasons-container {
+.contact-reasons-container {
     margin: 2em;
     display: flex;
     justify-content: space-around;
-  }
+}
 
-  .contact-reason {
+.contact-reason {
     box-sizing: border-box;
     background-color: #CECECE;
     border: 1px solid black;
@@ -96,37 +96,44 @@ footer {
     width: 18em;
     padding: 1em;
     text-align: center;
-  }
+}
 
-  form {
+.form-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 40em;
+    padding: 1em;
+}
+
+form {
     margin-top: 2em;
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .form-item {
+.form-item {
     margin-bottom: 1em;
-  }
+}
 
-  input {
+input {
     width: 14em;
-  }
+}
 
-  select {
+select {
     width: 18em;
-  }
+}
 
-  textarea {
+textarea {
     width: 18em;
     height: 10em;
-  }
+}
 
-  #submit-button {
+#submit-button {
     margin-left: 5em;
     width: 8em;
     padding: 0.5em;
     border-radius: 5px;
-  }
+}
 
 /* Home Page page specific */
 
