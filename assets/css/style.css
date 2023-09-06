@@ -15,9 +15,6 @@ body {
 
 main {
     margin-top: 4rem;
-    width: 90%;
-    margin-right: 5%;
-    margin-left: 5%;
     flex-grow: 1;
     font-family: 'Anonymous Pro', monospace;
 }
@@ -184,4 +181,19 @@ footer {
   display: flex;
   float: left;
   margin-bottom: 15px;
+}
+
+.hero {
+  width: 100vw;
+  padding: 0.7rem 0.2rem 0.7rem 0.2rem;
+  color: white;
+  background: linear-gradient(165deg, rgba(53,151,16, 0.95) 50%, rgba(65,185,20, 0.75) 100%);
+}
+
+.hero h1 {
+  font-weight: 700;
+}
+
+.hero p {
+  text-align: center;
 }
