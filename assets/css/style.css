@@ -199,7 +199,8 @@ footer {
     box-sizing: border-box;
     margin: 0 auto;
     margin-top: 3em;
-    width: 25em;
+    margin-bottom: 3em;
+    width: 20em;
     padding: 1em;
     border: 3px solid #E06315;
     border-radius: 10px;
@@ -257,6 +258,12 @@ textarea {
     width: 8em;
     padding: 0.5em;
     border-radius: 5px;
+}
+
+@media (min-width: 500px) {
+    .form-container {
+        width: 25em;
+    }
 }
 
 /* Home Page page specific */
