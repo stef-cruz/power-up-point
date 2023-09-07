@@ -18,12 +18,6 @@ function initMap() {
     zoom: 12,
   });
 
-  // DMcC - Add direction finder window //
-  //directionsDisplay.setMap(map);
-  //directionsDisplay.setPanel(document.getElementById("directionsPanel"));
-  //google.maps.event.addListener(map, 'click', function() {
-  //  infowindow.close();
-  //});
 
   // Set bounds within Dublin Ireland
   let defaultBounds = new google.maps.LatLngBounds(
@@ -34,6 +28,9 @@ function initMap() {
     strictBounds: false,
     types: ['address']
   };
+
+  // DMcC - Add spinner here? //
+
 
   // Make API request
   fetch("https://api.openchargemap.io/v3/poi?latitude=53.350140&longitude=-6.266155", {
