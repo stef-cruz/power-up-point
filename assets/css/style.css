@@ -65,6 +65,10 @@ nav li a {
   text-decoration: none;
 }
 
+a:hover {
+    color: #44841A;
+}
+
 .active {
     text-decoration: underline;
 }
