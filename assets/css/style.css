@@ -62,7 +62,10 @@ nav li {
 nav li a {
   color: #E06315;
   font-size: 1.2em;
-  text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 a:hover {
@@ -78,6 +81,94 @@ a:hover {
     position: relative;
     top: -5em; /* This needs to match header height */
     opacity: 0;
+}
+
+/* Styling linked to hamburger */
+.desktop-nav {
+    display: none;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 6em;
+    height: 5em;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0.5em;
+    z-index: 4;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.5em;
+    background-color: #E06315;
+    border-radius: 4px;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 5em;
+    right: 100%;
+    display: block;
+    width: 15em;
+    height: 19em;
+    z-index: 3;
+    padding-top: 2em;
+    transition: 0.4s;
+    background-color: #E06315;
+    border: 1px solid black;
+}
+
+.mobile-nav.is-active {
+    right: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.mobile-nav a:hover {
+    font-size: 1.2em;
+}
+
+@media (min-width: 1100px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
 }
 
 /* Footer specific styling */
