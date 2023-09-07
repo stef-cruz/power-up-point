@@ -390,6 +390,14 @@ textarea {
   margin-top: 0;
 }
 
+.infowindow_item >a {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    margin-top: 0;
+  }
+
 .infowindow_item h3 {
   color: #E06315;
 }
