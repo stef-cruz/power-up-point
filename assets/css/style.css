@@ -73,6 +73,13 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Hidden anchor point to allow for in page nav link to anchor to correct position */
+.anchor-point {
+    position: relative;
+    top: -5em; /* This needs to match header height */
+    opacity: 0;
+}
+
 /* Footer specific styling */
 
 footer {
