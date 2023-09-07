@@ -252,6 +252,14 @@ textarea {
 .footer{
   padding: 9.6rem 0;
 }
-.grid--5-cols {
+.grid--2-cols {
   grid-template-columns: repeat(5, 1fr);
 }
+.logo img {
+  height: 1.2rem;
+  display:flex;
+  filter: brightness(0);
+  justify-content: space-around;
+  opacity: 50%;
+}
+
