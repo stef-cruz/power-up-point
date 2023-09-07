@@ -29,10 +29,7 @@ function initMap() {
     types: ['address']
   };
 
-  // DMcC - Add spinner here? //
-
-
-  // Make API request
+   // Make API request
   fetch("https://api.openchargemap.io/v3/poi?latitude=53.350140&longitude=-6.266155", {
     headers: {
       'Content-Type': 'application/json',
@@ -42,10 +39,15 @@ function initMap() {
     .then(response => response.json())
     .then((markerData) => addMarkers(map, markerData))
     .catch(error => console.log(error))
+    
 }
 
 function addMarkers(map, markerData) {
-  // Loop through data and pass it on to infoWindow
+    // Turn off spinner display once markers start loading
+    const spinner = document.getElementById("spinner");
+    spinner.style.display= "none";
+  
+    // Loop through data and pass it on to infoWindow
 
   let normalisedData = processApiData(markerData)
 
