@@ -14,10 +14,14 @@ body {
 }
 
 main {
-    margin-top: 4rem;
+    margin-top: 5rem;
     flex-grow: 1;
     font-family: 'Anonymous Pro', monospace;
 }
+
+h1 {
+    font-weight: 700;
+  }
 
 h1, h2 {
     text-align: center;
@@ -28,7 +32,7 @@ h1, h2 {
 header {
     width: 100%;
     background-color: #FFFFFF;
-    height: 4rem;
+    height: 5rem;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -36,6 +40,11 @@ header {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+    margin-left: 1em;
 }
 
 nav ul {
@@ -46,12 +55,29 @@ nav ul {
 
 nav li {
     display: inline-block;
-    line-height: 2rem;
-    padding-right: 2rem;
+    line-height: 3.5rem;
+    padding-right: 1.5rem;
 }
 
 nav li a {
-  color: #000;
+  color: #E06315;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+a:hover {
+    color: #44841A;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+/* Hidden anchor point to allow for in page nav link to anchor to correct position */
+.anchor-point {
+    position: relative;
+    top: -5em; /* This needs to match header height */
+    opacity: 0;
 }
 
 /* Footer specific styling */
@@ -68,73 +94,65 @@ footer {
     justify-content: space-between;
   }
 
-  /* Contact Us page specific */
+/* Contact Us page specific */
+.contact-reasons-container {
+    margin: 2em;
+    display: flex;
+    justify-content: space-around;
+}
 
-  #contact-us-container {
+.contact-reason {
     box-sizing: border-box;
     background-color: #CECECE;
     border: 1px solid black;
     margin: 0 auto;
-    border-radius: 25px;
-    width: 60%;
-    min-width: 20em;
-    padding: 2em;
-    margin-top: 4em;
-    margin-bottom: 4em;
-  }
-
-  #contact-us-container > h2 {
-    margin-top: 0;
-  }
-
-  #contact-us-container > ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .contact-reason-points {
-    margin-bottom: 1em;
-  }
-
-  #contact-us-container > p {
+    border-radius: 10px;
+    width: 18em;
+    padding: 1em;
     text-align: center;
-  }
+}
 
-  form {
+.form-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 40em;
+    padding: 1em;
+}
+
+form {
     margin-top: 2em;
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .form-item {
+.form-item {
     margin-bottom: 1em;
-  }
+}
 
-  input {
+input {
     width: 14em;
-  }
+}
 
-  select {
+select {
     width: 18em;
-  }
+}
 
-  textarea {
+textarea {
     width: 18em;
     height: 10em;
-  }
+}
 
-  #submit-button {
+#submit-button {
     margin-left: 5em;
     width: 8em;
     padding: 0.5em;
     border-radius: 5px;
-  }
+}
 
 /* Home Page page specific */
 
 .main-index {
   background-color: white;
-  margin-top: 0;
 }
 
 .map {
@@ -194,6 +212,36 @@ footer {
   background: linear-gradient(165deg, rgba(53,151,16, 0.95) 50%, rgba(65,185,20, 0.75) 100%);
 }
 
+/* About Us page specific */
+
+#team-intro {
+    font-size: 1.6em;
+    padding: 2em;
+}
+
+#team-container {
+    width: 90%;
+    margin: 3em auto 5em;
+    max-width: 200em;
+    display: grid;
+    gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+}
+
+.team-card {
+    width: 15em;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.team-card img {
+    width: 15em;
+}
+
+/* This is now covered in universal h1 styling */
 .hero h1 {
   font-weight: 700;
 }
