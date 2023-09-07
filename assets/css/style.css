@@ -188,36 +188,54 @@ footer {
 /* Contact Us page specific */
 .contact-reasons-container {
     margin: 2em;
-    display: flex;
-    justify-content: space-around;
 }
 
 .contact-reason {
-    box-sizing: border-box;
-    background-color: #CECECE;
-    border: 1px solid black;
-    margin: 0 auto;
-    border-radius: 10px;
-    width: 18em;
-    padding: 1em;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .form-container {
     box-sizing: border-box;
     margin: 0 auto;
-    width: 40em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 20em;
     padding: 1em;
+    border: 3px solid #E06315;
+    border-radius: 10px;
+    /* Add shadow if time */
+}
+
+.form-heading {
+    color: #E06315;
+    font-size: 2em;
+    margin-top: 0.5em;
 }
 
 form {
     margin-top: 2em;
+}
+
+.user-info-container {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.labels {
+    width: 20%;
     display: flex;
     flex-direction: column;
 }
 
+.inputs {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
 .form-item {
     margin-bottom: 1em;
+    display: block;
 }
 
 input {
@@ -226,18 +244,26 @@ input {
 
 select {
     width: 18em;
+    margin-left: 2em;
 }
 
 textarea {
     width: 18em;
     height: 10em;
+    margin-left: 2em;
 }
 
 #submit-button {
-    margin-left: 5em;
+    margin: 0 auto;
     width: 8em;
     padding: 0.5em;
     border-radius: 5px;
+}
+
+@media (min-width: 500px) {
+    .form-container {
+        width: 25em;
+    }
 }
 
 /* Home Page page specific */
