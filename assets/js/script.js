@@ -73,7 +73,7 @@ function addMarkers(map, markerData) {
       '<p class="infowindow_item">Power kW: ' + chargingPoint.power_kw + 'kW</p>' +
       '<p class="infowindow_item">Connection type: ' + chargingPoint.connection_type_title + '</p>' +
       // DMcC - added navigation URL with the charging point lat/long.... 
-      '<a href=' + 'https://www.google.com/maps/dir/?api=1&destination=' + chargingPoint.lat + ',' + chargingPoint.long +'>Navigate to point</a>' +
+      '<a href=' + 'https://www.google.com/maps/dir/?api=1&destination=' + chargingPoint.lat + ',' + chargingPoint.long +' target='+'_blank'+'>Navigate to point</a>' +
       '<p class="infowindow_item">Operator Info: ' + chargingPoint.operator_info_title + '</p>' +
       '<p class="infowindow_item"><span>Payment Information</span>' + '</p>' +
       '<p class="infowindow_item">Pay at location? ' + chargingPoint.pay_at_location + '</p>' +
