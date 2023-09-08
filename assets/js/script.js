@@ -64,22 +64,32 @@ function addMarkers(map, markerData) {
     let content =
       '<div class="infowindow">' +
       '<div class="infowindow_group">' +
-      '<h3 class="infowindow_item">' + chargingPoint.title + '</h3>' +
-      '<p class="infowindow_item">' + chargingPoint.full_address + '</p>' +
-      '<p class="infowindow_item muted">Lat/Long: ' + chargingPoint.lat + ', ' + chargingPoint.long + '</p>' +
-      '<p class="infowindow_item"><span>Equipment details</span>' + '</p>' +
-      '<p class="infowindow_item">Is operational? ' + chargingPoint.is_operational + '</p>' +
-      '<p class="infowindow_item">Power kW: ' + chargingPoint.power_kw + 'kW</p>' +
-      '<p class="infowindow_item">Connection type: ' + chargingPoint.connection_type_title + '</p>' +
+      '<div class="navigate_button">' +
       // DMcC - added navigation URL with the charging point lat/long.... 
-      '<a href=' + 'https://www.google.com/maps/dir/?api=1&destination=' + chargingPoint.lat + ',' + chargingPoint.long +' target='+'_blank'+'>Navigate to point</a>' +
-      '<p class="infowindow_item">Operator Info: ' + chargingPoint.operator_info_title + '</p>' +
-      '<p class="infowindow_item"><span>Payment Information</span>' + '</p>' +
-      '<p class="infowindow_item">Pay at location? ' + chargingPoint.pay_at_location + '</p>' +
-      '<p class="infowindow_item">Usage Type ' + chargingPoint.usage_type + '</p>' +
-      '<p class="infowindow_item">Usage Cost ' + chargingPoint.usage_cost + '</p>' +
-      '<p class="infowindow_item"><span>Community Information</span> ' + '</p>' +
-      '<textarea class="infowindow_text_area">' + '</textarea>'
+      '<a href=' + 'https://www.google.com/maps/dir/?api=1&destination=' + chargingPoint.lat + ',' + chargingPoint.long +' target='+'_blank'+'>Navigate to Point</a>' +
+      '</div>' +
+      '<div class="infowindow_item">' +
+      '<h2>' + chargingPoint.title + '</h2>' +
+      '<p>' + chargingPoint.full_address + '</p>' +
+      '<p>Lat/Long: ' + chargingPoint.lat + ', ' + chargingPoint.long + '</p>' +
+      '</div>' +
+      '<div class="infowindow_item">' +
+      '<h2><span>Equipment Details</span>' + '</h2>' +
+      '<p>Is operational? ' + chargingPoint.is_operational + '</p>' +
+      '<p>Power kW: ' + chargingPoint.power_kw + 'kW</p>' +
+      '<p>Connection type: ' + chargingPoint.connection_type_title + '</p>' +
+      '<p>Operator Info: ' + chargingPoint.operator_info_title + '</p>' +
+      '</div>' +
+      '<div class="infowindow_item">' +
+      '<h2><span>Payment Information</span>' + '</h2>' +
+      '<p>Pay at location? ' + chargingPoint.pay_at_location + '</p>' +
+      '<p>Usage Type ' + chargingPoint.usage_type + '</p>' +
+      '<p>Usage Cost ' + chargingPoint.usage_cost + '</p>' +
+      '</div>' +
+      '<div class="infowindow_item info_field">' +
+      '<h2><span>Community Information</span> ' + '</h2>' +
+      '<textarea class="infowindow_text_area">' + '</textarea>'+
+      '</div>' +
     '</div>'
     '</div>';
 

@@ -454,7 +454,7 @@ textarea {
 
 /* Home Page Map */
 
-/* spinner */
+/* Loading Spinner */
 #spinner {
     position: absolute;
     margin-left: auto;
@@ -465,7 +465,7 @@ textarea {
     top: 50%;
     border: 16px solid #f3f3f3;
     /* Light grey */
-    border-top: 16px solid #3498db;
+    border-top: 16px solid rgba(65, 185, 20, 0.75);
     /* Blue */
     border-radius: 50%;
     width: 120px;
@@ -484,10 +484,12 @@ textarea {
     }
 }
 
+/* Map */
 #map {
     height: 40rem;
 }
 
+/* Pin Card */
 .infowindow {
     word-wrap: break-word;
     border-radius: 0.25rem;
@@ -499,25 +501,65 @@ textarea {
 }
 
 .infowindow_item {
-    padding: 0.75rem 1.25rem;
+    padding: 0.55rem 1.05rem;
     margin-bottom: -1px;
-    background-color: #fff;
+    background-color: #F1FDED;
     border: 1px solid rgba(0, 0, 0, .125);
     margin-top: 0;
-}
-
-
-.infowindow_item h3 {
-    color: #E06315;
-}
-
-.infowindow_item span {
-    font-weight: 500;
+    color: #000;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 .muted {
     color: #707d61;
     font-size: 12px;
+}
+
+.navigate_button {
+    margin: 6px 0 14px;
+    text-align: center;
+}
+
+.navigate_button a {
+    font-family: 'Anonymous Pro', monospace;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    background-color: #ff8b43;
+    border: 2px solid #ff8b43;
+    border-radius: 15px;
+    padding: 4px 10px;
+    color: #000;
+    font-weight: 400;
+    font-size: large;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navigate_button a:hover {
+    background-color: #41B914;
+    border: 2px solid #41B914;
+    color: #ffffff;
+}
+
+.info_field {
+    text-align: center;
+}
+
+.infowindow_item h2 {
+    background-color: #41B914;
+    color: #000;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.info_field textarea {
+    margin: 0;
+}
+
+.card_button {
+    text-decoration: none;
+    color: black;
+    background-color: #E06315;
 }
 
 /* This is now covered in universal h1 styling */
@@ -527,4 +569,4 @@ textarea {
 
 .hero p {
     text-align: center;
-}
+} 
