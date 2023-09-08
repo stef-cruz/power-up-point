@@ -1,38 +1,47 @@
 window.onload = function () {
-    const menu_btn = document.querySelector('.hamburger');
-    const mobile_menu = document.querySelector('.mobile-nav');
+  const menu_btn = document.querySelector('.hamburger');
+  const mobile_menu = document.querySelector('.mobile-nav');
 
-    menu_btn.addEventListener('click', function () {
-        menu_btn.classList.toggle('is-active');
-        mobile_menu.classList.toggle('is-active');
-    })
+  menu_btn.addEventListener('click', function () {
+    menu_btn.classList.toggle('is-active');
+    mobile_menu.classList.toggle('is-active');
+  })
 }
 
 // Map
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: 53.350631935496004,
-          lng: -6.2599891096804585 },
-      zoom: 12,
+    center: {
+      lat: 53.350631935496004,
+      lng: -6.2599891096804585
+    },
+    zoom: 12,
   });
+
+  // DMcC - Add direction finder window //
+  //directionsDisplay.setMap(map);
+  //directionsDisplay.setPanel(document.getElementById("directionsPanel"));
+  //google.maps.event.addListener(map, 'click', function() {
+  //  infowindow.close();
+  //});
 
   // Set bounds within Dublin Ireland
   let defaultBounds = new google.maps.LatLngBounds(
-      new google.maps.LatLng(53.350631935496004, -6.2599891096804585),
-      new google.maps.LatLng(53.350631935496004, -6.2599891096804585));
+    new google.maps.LatLng(53.350631935496004, -6.2599891096804585),
+    new google.maps.LatLng(53.350631935496004, -6.2599891096804585));
   let options = {
-      bounds: defaultBounds,
-      strictBounds: false,
-      types: ['address']
+    bounds: defaultBounds,
+    strictBounds: false,
+    types: ['address']
   };
 
   // Make API request
   fetch("https://api.openchargemap.io/v3/poi?latitude=53.350140&longitude=-6.266155", {
-      headers: {
-        'Content-Type': 'application/json',
-        'X-API-Key': '1161e5e3-6c1b-4827-80d2-d482dd4b1ec1'
-      }
-    })
+    headers: {
+      'Content-Type': 'application/json',
+      'X-API-Key': '1161e5e3-6c1b-4827-80d2-d482dd4b1ec1'
+    }
+  })
     .then(response => response.json())
     .then((markerData) => addMarkers(map, markerData))
     .catch(error => console.log(error))
@@ -46,29 +55,34 @@ function addMarkers(map, markerData) {
   normalisedData.forEach((chargingPoint) => {
     const marker = new google.maps.Marker({
       position: {
-          lat: chargingPoint.lat,
-          lng: chargingPoint.long },
+        lat: chargingPoint.lat,
+        lng: chargingPoint.long
+      },
       map: map,
     });
+
+    
     let content =
-        '<div class="infowindow">' +
-          '<div class="infowindow_group">' +
-            '<h3 class="infowindow_item">' + chargingPoint.title + '</h3>' +
-            '<p class="infowindow_item">' + chargingPoint.full_address + '</p>'+ 
-            '<p class="infowindow_item muted">Lat/Long: ' + chargingPoint.lat + ', ' + chargingPoint.long + '</p>' +
-            '<p class="infowindow_item"><span>Equipment details</span>' + '</p>' +
-            '<p class="infowindow_item">Is operational? ' + chargingPoint.is_operational + '</p>' +
-            '<p class="infowindow_item">Power kW: ' + chargingPoint.power_kw + 'kW</p>' +
-            '<p class="infowindow_item">Connection type: ' + chargingPoint.connection_type_title + '</p>' +
-            '<p class="infowindow_item">Operator Info: ' + chargingPoint.operator_info_title + '</p>' +
-            '<p class="infowindow_item"><span>Payment Information</span>' + '</p>' +
-            '<p class="infowindow_item">Pay at location? ' + chargingPoint.pay_at_location + '</p>' +
-            '<p class="infowindow_item">Usage Type ' + chargingPoint.usage_type + '</p>' +
-            '<p class="infowindow_item">Usage Cost ' + chargingPoint.usage_cost + '</p>' +
-            '<p class="infowindow_item"><span>Community Information</span> ' + '</p>' +
-            '<textarea class="infowindow_text_area">' + '</textarea>' +
-          '</div>'
-        '</div>';
+      '<div class="infowindow">' +
+      '<div class="infowindow_group">' +
+      '<h3 class="infowindow_item">' + chargingPoint.title + '</h3>' +
+      '<p class="infowindow_item">' + chargingPoint.full_address + '</p>' +
+      '<p class="infowindow_item muted">Lat/Long: ' + chargingPoint.lat + ', ' + chargingPoint.long + '</p>' +
+      '<p class="infowindow_item"><span>Equipment details</span>' + '</p>' +
+      '<p class="infowindow_item">Is operational? ' + chargingPoint.is_operational + '</p>' +
+      '<p class="infowindow_item">Power kW: ' + chargingPoint.power_kw + 'kW</p>' +
+      '<p class="infowindow_item">Connection type: ' + chargingPoint.connection_type_title + '</p>' +
+      // DMcC - added navigation URL with the charging point lat/long.... 
+      '<a href=' + 'https://www.google.com/maps/dir/?api=1&destination=' + chargingPoint.lat + ',' + chargingPoint.long +' target='+'_blank'+'>Navigate to point</a>' +
+      '<p class="infowindow_item">Operator Info: ' + chargingPoint.operator_info_title + '</p>' +
+      '<p class="infowindow_item"><span>Payment Information</span>' + '</p>' +
+      '<p class="infowindow_item">Pay at location? ' + chargingPoint.pay_at_location + '</p>' +
+      '<p class="infowindow_item">Usage Type ' + chargingPoint.usage_type + '</p>' +
+      '<p class="infowindow_item">Usage Cost ' + chargingPoint.usage_cost + '</p>' +
+      '<p class="infowindow_item"><span>Community Information</span> ' + '</p>' +
+      '<textarea class="infowindow_text_area">' + '</textarea>'
+    '</div>'
+    '</div>';
 
     InfoWindow(marker, content);
   });
@@ -76,13 +90,13 @@ function addMarkers(map, markerData) {
   let addInfoWindow = new google.maps.InfoWindow();
 
   function InfoWindow(marker, content) {
-      google.maps.event.addListener(marker, 'click', function () {
-          // set content
-          addInfoWindow.setContent(content);
-          // open infowindow on the marker
-          addInfoWindow.open(map, marker);
-          // waitForElementToDisplay("#js-infowindow__lat", function(){alert();}, 10, 9000);
-      });
+    google.maps.event.addListener(marker, 'click', function () {
+      // set content
+      addInfoWindow.setContent(content);
+      // open infowindow on the marker
+      addInfoWindow.open(map, marker);
+      // waitForElementToDisplay("#js-infowindow__lat", function(){alert();}, 10, 9000);
+    });
   }
 }
 
