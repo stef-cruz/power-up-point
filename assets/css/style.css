@@ -432,7 +432,7 @@ textarea {
 .team-card_text {
     height: 5em;
     position: relative;
-    z-index: 5;
+    z-index: 1;
     background: #ffffff;
     border-radius: 10px;
     border-top: 1px solid black;
