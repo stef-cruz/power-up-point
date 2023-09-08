@@ -351,19 +351,63 @@ textarea {
     display: grid;
     gap: 3em;
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    position: relative;
 }
 
 .team-card {
     width: 15em;
-    height: auto;
+    height: 20em;
     border: 1px solid black;
     border-radius: 10px;
     margin: 0 auto;
+}
+
+.team-picture-container {
+    height: 15em;
     overflow: hidden;
+}
+
+.team-picture-container img {
+    border-radius: 10px;
 }
 
 .team-card img {
     width: 15em;
+}
+
+.team-card_info {
+    width: 14em;
+    height: 14em;
+    background-color: #FFFFFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    left: 0.5em;
+    bottom: 1em;
+    background: linear-gradient(rgba(53,151,16, 1) 0%, rgba(255,255,255,1) 20%);
+    border-top: 1px solid black;
+}
+
+.team-card_text {
+    height: 5em;
+    position: relative;
+    z-index: 5;
+    background: #ffffff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top: 1px solid black;
+    box-shadow: 0 -2px 4px black;
+    background: linear-gradient(rgba(255,255,255,1) 0%, rgba(238,238,238,1) 48%, rgba(255,255,255,1) 100%);
+}
+
+.team-card:hover .team-card_info {
+    transform: translateY(-13em);
+    transition: 0.3s ease-in-out;
+}
+
+.team-card:hover .team-card_text {
+    transform: skewX(5deg);
+    transform-origin: bottom right;
 }
 
 /* Home Page Map */
