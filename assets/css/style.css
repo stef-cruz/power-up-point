@@ -377,10 +377,9 @@ textarea {
 
 .team-card_info {
     width: 14em;
-    height: 14em;
+    height: 16em;
     background-color: #FFFFFF;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
     position: relative;
     left: 0.5em;
     bottom: 1em;
@@ -388,13 +387,46 @@ textarea {
     border-top: 1px solid black;
 }
 
+.team-card_info span, .team-card_info i {
+    position: absolute;
+}
+
+.team-card_info span {
+    font-size: 2em;
+    left: 1em;
+}
+
+.team-card_info i {
+    font-size: 2.8em;
+    top: 2.8em;
+}
+
+.github-icon {
+    left: 1.2em;
+}
+
+.github-icon:hover {
+    color: #44841A;
+}
+
+.linkedin-icon {
+    right: 1.2em;
+}
+
+.linkedin-icon:hover {
+    color: #E06315;
+}
+
+.team-card_info span {
+    top: 1em;
+}
+
 .team-card_text {
     height: 5em;
     position: relative;
     z-index: 5;
     background: #ffffff;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 10px;
     border-top: 1px solid black;
     box-shadow: 0 -2px 4px black;
     background: linear-gradient(rgba(255,255,255,1) 0%, rgba(238,238,238,1) 48%, rgba(255,255,255,1) 100%);
