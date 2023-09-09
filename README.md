@@ -150,12 +150,6 @@ Geographic scope: Island of Ireland (initially focussed on Dublin)
 <img src="https://stef-cruz.github.io/power-up-point/assets/readme_files/wf-contact-us-page.png">
 </details>
 
-### Colour Scheme
-The colour scheme chosen was
-
-### Typography
-The fonts chosen are
-
 ## Design Approach
 
 ## Features
@@ -196,9 +190,9 @@ The PowerUpPoint icon is used consistently throughout the site and a complementa
 [Icon and favicon](!https://stef-cruz.github.io/power-up-point/assets/readme_files/sp-icon-and-favicon.png)
 
 ### F04 Responsiveness
-The site is fully responsive and displays well on different screen sizes.  See [here](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/responsiveness-sp1.png) for  various site pages on different devices.
+The site is fully responsive and displays well on different screen sizes.  
 
-Can also be dynamically tested at this [link](https://ui.dev/amiresponsive?url=https://stef-cruz.github.io/power-up-point/index.html)
+This can be dynamically tested at this [link](https://ui.dev/amiresponsive?url=https://stef-cruz.github.io/power-up-point/index.html)
 
 ### F05 Charging Point details
 Once the user clicks on a given charging point on the map, an attribute card, which gives the user information to decide whether this charging point is of interest to them.  
