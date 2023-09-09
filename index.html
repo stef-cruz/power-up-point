@@ -15,6 +15,18 @@
 
     <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/c91c32f3e9.js" crossorigin="anonymous"></script>
+
+    <!---Link to IONIcons-->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
   
     <title>PowerUpPoint</title>
   </head>
@@ -32,7 +44,7 @@
           <li><a href="contact.html">CONTACT US</a></li>
         </ul>
       </nav>
-      <button class="hamburger">
+      <button class="hamburger" aria-label="open up the menu">
         <div class="bar"></div>
       </button>
     </header>
@@ -43,10 +55,13 @@
     </nav>
     <!-- Main section -->
     <main class="main-index">
+
+      <!-- Hero Section -->
       <section class="hero">
         <h1>FIND CHARGING FAST</h1>
         <p>Find electric vehicle charging stations for your EV</p>
       </section>
+
       <!-- Add a spinner -->
       <section class="map-section">
         <div id="spinner">
@@ -56,9 +71,22 @@
         <div id="map">
         </div>
       </section>
-      <div class="features_box">
+
+      <!-- Info Card Section -->
+      <section class="infowindow-homepage">
+        <div class="infowindow">
+          <div class="infowindow_group">
+            <div class="infowindow_item">
+                <h2>Please select a charging point on the map.</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features_box">
         <hr class="features-divider">
-        <section class="features">
+        <div class="features">
           <!-- Hidden Anchor point added to allow nav link to correctly jump to the correct place -->
           <h2>Power Up your EV<span class="anchor-point" id="what-we-do">a</span></h2>
           <div class="feature-container">
@@ -76,27 +104,59 @@
               <img src="assets/images/icon_tree.png" alt="Tree icon">
             </div>
             <div class="feature-container_text">
-              <p>Join us in driving positive change for the planet. We're committed to sustainability by promoting electric
-                vehicle adoption. By choosing EVs and using our platform to find charging stations, you're making a green
-                choice that reduces emissions and helps protect the environment. Together, we're paving the way to a
-                cleaner, greener future..</p>
+              <p>Join us in driving positive change for the planet. We are committed to sustainability by promoting electric
+                vehicle adoption. By choosing EVs and using our platform to find charging stations, you are making a green
+                choice that reduces emissions and helps protect the environment. Together, were paving the way to a
+                cleaner, greener future.</p>
             </div>
           </div>
           <div class="feature-container">
             <div class="feature-container_icon"><img src="assets/images/icon_star.png" alt="Start icon"></div>
             <div class="feature-container_text">
               <p>Share your experiences and stay informed. Our review feature empowers you to provide valuable feedback on
-                charging stations. Plus, stay up to date with the latest user reviews and station information. Whether it's
+                charging stations. Plus, stay up to date with the latest user reviews and station information. Whether it is
                 praising a great charging experience or reporting issues, your insights help the EV community make informed
                 choices and improve charging infrastructure.</p>
             </div>
           </div>
-        </section>
+        </div>
         <hr class="features-divider">
       </div>
-    </main>
-    <!-- Link to the JavaScript file -->
-    <script src="assets/js/script.js"></script>
-    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyahPifJNOEODhSoMTswXum-vuIfSDF8w&amp;callback=initMap&amp;libraries=places&amp;v=weekly"></script>
-  </body>
+    </section>
+  </main>
+
+  <!-- Link to the JavaScript file -->
+  <script src="assets/js/script.js"></script>
+  <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyahPifJNOEODhSoMTswXum-vuIfSDF8w&amp;callback=initMap&amp;libraries=places&amp;v=weekly"></script>
+  
+  <!--footer-->
+
+    <footer class ="flex-container">
+      <div class="logo-col">
+        <a href="#" class ="footer-logo">
+          <img class="logo"  alt="PowerUpPoint Logo" src="assets/images/power-up-point-logo.png"/>
+        </a>
+      </div>
+      <div>
+        <p class ="copyright">Copyright &copy;2023 Hackathon team4 project developed for Code Institute</p> 
+            </div>
+      <div>
+        <ul class="social-links">
+          <li>
+            <a href="https://stef-cruz.github.io/power-up-point/index.html"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fa-solid fa-id-badge"></i></i></a>
+          </li>
+          </ul>
+      </div>
+            
+         
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+</body>
 </html>

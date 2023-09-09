@@ -5,50 +5,124 @@
 ![Summer of Code Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1693903105/Hackathons/Untitled_design_2_1_gzwakq.png)
 
 # PowerUpPoint
+(Developer: **GreenerToday** hackathon team, Sept 2023)
 
-## Deployment
 
-This project was created by **GreenerToday** and is deployed and can be accessed at [http://your-deployed-link.com](http://your-deployed-link.com).
+# Table of Contents:
+1. [About](#about)
+2. [Project Goals: ](#project-goals)
+    1. [UX Design - Strategy ](#ux-design-strategy) 
+    2. [UX Design - Strategy - Competitor Portals](#ux-design-strategy-analysis-of-competitor-offerings)
+    3. [UX Design - Strategy - Target Audience](#ux-design-strategy-target-audience)
+3. [UX Design - Scope](#ux-design-scope)
+    1. [UX Design - Scope - User Requirements and Expectations](#ux-design-scope-user-stories)
+    2. [UX Design - Scope - Data](#ux-design-scope-data)
+    3. [UX Design - Scope - Viewing Device](#ux-design-scope-viewing-device)
+4. [User goals/ user stories: ](#user-goals-user-stories)
+    1. [First-time User Goals](#first-time-user-goals)
+    2. [Returning User Goals](#returning-user-goals)
+    3. [Site Owner Goals](#site-owner-goals)
+5. [Further UX Design: ](#ux-design-decisions)
+    1. [Skeleton - Wireframes; ](#wireframes)
+    2. [Surface - Colours](#colour-scheme)
+    3. [Surface - Fonts; ](#typography)
+    4. [Surface - Imagery](#design-images)
+6. [Features](#features)
+    1. [Included](#features-in-scope)
+    2. [Future Development](#features-left-to-implement)
+7. [Technology](#technologies)
+    1. [Languages](#langugages)
+    2. [Frameworks and Tools](#frameworks--tools)
+8. [Validation](#validation)
+    1. [HTML Validation](#html-validation)
+    2. [CSS Validation](#css-validation)
+    3. [Javascript Validation](#javascript-validation)
+    4. [Accessibility](#accessibility)
+    5. [Performance](#performance)
+    6. [Multi-device Testing](#multi-device-testing)
+    7. [Multi-browser Testing](#multi-browser-testing)
+    8. [Testing user stories](#testing-user-stories)
+    9. [Unfixed Bugs](#unfixed-bugs)
+9. [Accessibility](#accessibility)
+10. [Performance](#performance)
+11. [Deployment](#deployment)
+12. [Credits](#credits)
+    1. [Content](#content)
+    2. [Media](#media)
+    3. [Code](#code)
+    4. [References](#references)
+    5. [Acknowledgements](#acknowledgements)
 
-[Intro](#intro)  
-[Goal](#goal)  
-[User Stories](#user-stories)  
-[Wireframes](#wireframes)  
-[Colour Scheme](#colour-scheme)  
-[Typography](#typography)  
-[Technologies used](#technologies-used)  
-[Credits](#credits)  
+
+## About
+--------
+This project was created by **GreenerToday** and is deployed and can be accessed at [PowerUpPoint](https://stef-cruz.github.io/power-up-point/index.html).
 
 ## Intro
-This wonderful project is just basically awesome.  What else can I say....?  Not to mention the project team, well, we are awesome as well.  Obviously.
+PowerUpPoint is a site to assist Electric Vehicle users in locating a charging point, in a particular locality, which is suited to their vehicle.
 
-<- OK I will replace this with several descriptive paragraphs of our project says Deirdre!!>
+### Responsive Mockup
+[Static image with variety of opened pages](screenprint)
 
-## Goal
+[Dynamic responsiveness view](https://ui.dev/amiresponsive?url=https://stef-cruz.github.io/power-up-point/index.html)
 
+### Live webpage link
+[PowerUpPoint](https://stef-cruz.github.io/power-up-point/index.html).
+
+## PowerUpPoint Goals
+1. Easily locate charging stations for your electric vehicle (EV), particularly in geographic areas the user is unfamilar with.
+2. Using a mobile-friendly development approach
+3. Using a comprehensive, up-to-date dataset
+4. With minimal overhead in getting to the required information.
+
+- ➡️ Benefits
+It promotes community involvement by encouraging users to log faulty chargers.
+
+### UX Design Strategy
+Existing websites offering charging location info were evaluated, and user interviews taken to determine pain points.  Particular attention was paid to existing datasets and their limitations.
+
+While PowerUpPoint version 1 does not address all of the known UX issues, it is specifically designed as a scalable solution which can be incrementally developed to add new functionality.
+
+### UX Design Strategy - Problem Statement
 
 - ➡️ Problem Statement
-EV owners can encounter obstacles when attempting to charge their vehicle away from home, including locating an appropriate point, accessing it, bringing a connecting cable if needed, queueing, planning the charge duration, and, if at an inconvenient location, possibly needing to wait with the vehicle for the EV charge to complete.
+EV owners can encounter obstacles when attempting to charge their vehicle away from home, including finding a portal which shows sufficient data, locating an appropriate point, accessing it, bringing a connecting cable if needed, queueing, planning the charge duration, and, if at an inconvenient location, possibly needing to wait with the vehicle for the EV charge to complete.
 
+###UX Design strategy analysis of competitor offerings
 The **GreenerToday** team started with an analysis of existing websites 
-[(details here)](//assets/readme_files/ux_competitor_sites.pdf) and observed:  
+[(details here)](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/analysis-ev-cp-websites.png).  
+<br>
+**Observations:**
+<br>
 * Many of the websites are proprietary, and show incomplete information (e.g. don't show competing providers chargers).
 * Map-based searching often shows summary information when the user zooms out (e.g. 5 charges in Arklow), however, if the user is attempting to plan a trip, they then need to zoom in and out to get the required detail
-* Only one of the websites audited shows available/in use status, and none show 'out of order' status
+* Only one of the 5 websites audited shows available/in use status, and none show 'out of order' status
+
+**User interviews** with EV users were also conducted and they reported pain points when locating/accessing a charging location for their EV as follows:
+* CP not working/ broken
+* CP occupied on arrival
+* CP inaccessible on arrival - e.g. non- electric car parked; CP venue closes overnight 
+* Queue for CP
+* Time needed to perform charge - must be factored into longer journeys
+* Charger may be at an inconvenient location, e.g. dark street at night
+
 
 - ➡️ Objective(s)
 
-**PowerUpPoint** site aims to make the identification of a well located, suitable charging point, easier for users.
+**PowerUpPoint** site aims to make locating  appropriate charging points easier for users.
 
-- ➡️ Target Audience
+### UX Design Strategy Target Audience
 
-EV drivers who require a re-charge at a public charging station.  Typically away from their domestic chargers, because of trip distance and/or duration.  These users may (although not always) be in a loction unfamiliar to them, and may depend on **PowerUpPoint's** data to make choices. 
+EV drivers who require a re-charge at a public charging station.  Typically, due to because of trip distance or duration, they are away from their domestic chargers.  These users may (although not always) be in a loction unfamiliar to them, and may depend on **PowerUpPoint's** data to make choices. 
 
-- ➡️ Benefits
 
-PowerUpPoint provides an agnostic (not tied to one particular supplier), map based, user-centric portal for users to conveniently establish locality and features of charging points.
+## UX Design Scope
+----------------
+### UX Design Scope - Data
+Data scope:  Data from multipe EV charger suppliers
+Geographic scope: Island of Ireland (initially focussed on Dublin)
 
-## User Stories
+### UX Design Scope User Stories
 
 ### First-time user Goals
 - FTU01 As a first-time user I want to able to understand the purpose of the website instantly, so that I can quickly gain benefit from using it
@@ -77,20 +151,138 @@ PowerUpPoint provides an agnostic (not tied to one particular supplier), map bas
 - RU_09 As a user I would LOVE to be able to estimate the charging time needed for my vehicle at a particular charging point
 - SO_04 As website administrator I would like to share user feedback on individual charging point with other users (e.g. faulty stations)
 
-## Wireframes
+## UX Design Decisions
+----------------
 
-## Colour Scheme
+### Wireframes
+<details><summary>Landing Page</summary>
+<img src="https://stef-cruz.github.io/power-up-point/assets/readme_files/wf-landing-page.png">
+</details>
 
-## Typography
+<details><summary>Find-your-location Page</summary>
+<img src="https://stef-cruz.github.io/power-up-point/assets/readme_files/wf-find-your-location-page.png">
+</details>
+
+<details><summary>Contact us Page</summary>
+<img src="https://stef-cruz.github.io/power-up-point/assets/readme_files/wf-contact-us-page.png">
+</details>
+
+### Colour Scheme
+The colour scheme chosen was
+
+### Typography
+The fonts chosen are
+
+## Design Approach
+
+## Features
+
+### F01 Landing Page
+The landing page brings the user straight to an information map showing charging points by location.  
+<br>
+On the Landing Page, OpenChargeMaps APIs are used to fetch extensive data on the charging points within the area.  Google maps APIs are used to display background map and charging point markers. 
+<br>
+This satisfies user stories:
+* FTU01 first-time user to instantly undertand purpose of website; 
+* FTU01 ease of navigation, 
+* FTU03 see charging points at a particular geographic location
+
+<details><summary>Landing Page</summary>
+<img src="https://stef-cruz.github.io/power-up-point/assets/readme_files/sp-landing-page.png">
+</details>
+
+### F02 PowerUpPoint Site Navigation
+A consistent navbar is seen on all site pages.  The Navbar is respnsive and wil re-position on smaller screen sizes.  Fonts and colours are consistent throughout the site pages.
+This satisfies user stories:
+* FTU02 ease of navigation,
+and also satisfies the core requirements for this ESG project that the site be fully usable.
+[screenprint navbar]()
+
+<details><summary>Navbar</summary>
+<img src="https://stef-cruz.github.io/power-up-point/assets/readme_files/sp-navbar1.png">
+</details>
+<details><summary>Showing hamburger menu at smaller screen sizes</summary>
+<img src="https://stef-cruz.github.io/power-up-point/assets/readme_files/sp-navbar2.png">
+</details>
+<details><summary>Which shows the options by clicking on it</summary>
+<img src="https://stef-cruz.github.io/power-up-point/assets/readme_files/sp-navbar3.png">
+</details>
+
+### F03 Consistent Imagery
+Icon and favicon
+
+### F04 Responsiveness
+The site is fully responsive and displays well on different screen sizes.  See here various site pages on different devices.
+[responsivenss screenprint](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/responsiveness-sp1.png)
+
+Can also be tested at this [link](https://ui.dev/amiresponsive?url=https://stef-cruz.github.io/power-up-point/index.html)
+
+### F05 Charging Point details
+Once the user clicks on a given charging point on the map, an attribute card, which gives the user information to decide whether this charging point is of interest to them.  This satisfies user stories  FTU03 first-time user evaluating suitability of charing points, and RU03 ability for returning user to see more information about charging points
+
+[screenprint]()
+[additional screenprint]()
+
+### F06 Status Display
+User comments, e.g. charging point status, are visible as an additional panel when the user clicks on a particular charging point.  This satisfies user story  
+
+
+
+### F07 Drive to location
+Within the charging point details, a link to 'navigate to point; is avilable, this uses Google APIs to open a new tab with a map routing the user from their current location (as best understood by Google) to the charging point.
+This satifies user story FTU04 user wishing to get mapped directions from their location to the charging point location.
+
+### F07 What we do
+... some text here to describe the sites mission statement
+
+### F08 Who we are
+... some text from Simas here to describe why we setup this page, the details included, and some of the features within it.
+
+### F09 Open-Source dataset
+An open-source charging point dataset was identified by the team, this provided multi-vendor charging point data and included APIs to access (and potentially, in the future, add to) the data.  A well as providing a decent programming challenge, this satisfies user stories SO02 multi-vendor dataset, SO03 existing open-source data which is maintained and updated frequently.
+<br>
+[Dataset provider details](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-opendata1.jpg)
+
+<br>
+[Evidence of data currency - regular updates](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-opendata2.jpg)
+<br>
+[with open access via API]((https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-opendata3.jpg))
+
+
+### F10
+
+
 
 ## Technologies used
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
+Figma (for wireframes)
+HTL
+CSS
+Javascript
 
 ## Credits
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
+* The various users we interviewed to discover 'points of pain' in their EV charging experience.
 
 ### Content
-https://openchargemap.org/site/ A portal providing details of EV charging points, with associated API
-- 🌐 [External Resource 1]
+https://openchargemap.org/site/ An open-source portal providing details of EV charging points, with associated API
+Google Maps: Provision of map-based hosting
 
+- 🌐 [External Resource 1]
 - 🌐 [External Resource 2]
+
+
+
+
+
+Headings as provided for hackathon - double check these are all covered!
+## Deployment
+[Intro](#intro)  
+[Goal](#goal) 
+[User Stories](#user-stories)  
+[Wireframes](#wireframes)  
+[Colour Scheme](#colour-scheme)  
+[Typography](#typography)  
+[Technologies used](#technologies-used)  
+[Credits](#credits)  
+
