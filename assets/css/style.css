@@ -217,6 +217,14 @@ footer {
   margin: 0 0.5em;
 }
 
+#github-footer-icon:hover, #github-footer-icon:hover {
+    color: rgba(0, 0, 0, 0.7)
+}
+
+#contact-us-footer-icon:hover, #contact-us-footer-icon:hover {
+    color: #e06315;
+}
+
 .footer-logo img {
   margin-top: 1.5em;
   width: 15em;
