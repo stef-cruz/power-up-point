@@ -15,9 +15,7 @@
     2. [UX Design - Strategy - Competitor Portals](#ux-design-strategy-analysis-of-competitor-offerings)
     3. [UX Design - Strategy - Target Audience](#ux-design-strategy-target-audience)
 3. [UX Design - Scope](#ux-design-scope)
-    1. [UX Design - Scope - User Requirements and Expectations](#ux-design-scope-user-stories)
-    2. [UX Design - Scope - Data](#ux-design-scope-data)
-    3. [UX Design - Scope - Viewing Device](#ux-design-scope-viewing-device)
+    1. [UX Design - Scope - User Requirements and Expectations]
 4. [User goals/ user stories: ](#user-goals-user-stories)
     1. [First-time User Goals](#first-time-user-goals)
     2. [Returning User Goals](#returning-user-goals)
@@ -75,8 +73,7 @@ PowerUpPoint is a site to assist Electric Vehicle users in locating a charging p
 3. Using a comprehensive, up-to-date dataset
 4. With minimal overhead in getting to the required information.
 
-- ➡️ Benefits
-It promotes community involvement by encouraging users to log faulty chargers.
+**Benefits**:  PowerUpPoint promotes community involvement by encouraging users to log faulty chargers.
 
 ### UX Design Strategy
 Existing websites offering charging location info were evaluated, and user interviews taken to determine pain points.  Particular attention was paid to existing datasets and their limitations.
@@ -85,10 +82,12 @@ While PowerUpPoint version 1 does not address all of the known UX issues, it is 
 
 ### UX Design Strategy - Problem Statement
 
-- ➡️ Problem Statement
+**Problem Statement**
+<br>
 EV owners can encounter obstacles when attempting to charge their vehicle away from home, including finding a portal which shows sufficient data, locating an appropriate point, accessing it, bringing a connecting cable if needed, queueing, planning the charge duration, and, if at an inconvenient location, possibly needing to wait with the vehicle for the EV charge to complete.
 
-###UX Design strategy analysis of competitor offerings
+### UX Design strategy - analysis of competitor offerings
+
 The **GreenerToday** team started with an analysis of existing websites 
 [(details here)](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/analysis-ev-cp-websites.png).  
 <br>
@@ -107,8 +106,6 @@ The **GreenerToday** team started with an analysis of existing websites
 * Charger may be at an inconvenient location, e.g. dark street at night
 
 
-- ➡️ Objective(s)
-
 **PowerUpPoint** site aims to make locating  appropriate charging points easier for users.
 
 ### UX Design Strategy Target Audience
@@ -118,6 +115,7 @@ EV drivers who require a re-charge at a public charging station.  Typically, due
 
 ## UX Design Scope
 ----------------
+
 ### UX Design Scope - Data
 Data scope:  Data from multipe EV charger suppliers
 Geographic scope: Island of Ireland (initially focussed on Dublin)
@@ -142,6 +140,7 @@ Geographic scope: Island of Ireland (initially focussed on Dublin)
 - SO_01 As an administrator I want to be able to include details of privately-operated as well as publicly-offered (e.g. ESB) charging points, so the site users are offered the most complete data
 - SO_02 As website administrator I would like to re-use an open-source/non proprietary EV charging dataset as the primary data source, to avoid the overhead of core data capture/maintenance
 - SO_03 As website administrator I would like to show 'rich' data on each EV charging point, e.g. charging type, any restrictions on opening hours, amenities available while waiting, unit charges/price band,  ...to make the website more useful and relevant to users   
+- SO_04 As website administrator I would like to share user feedback on individual charging point with other users (e.g. faulty stations)
 
 ### Nice to haves/ Future Development:
 
@@ -149,7 +148,6 @@ Geographic scope: Island of Ireland (initially focussed on Dublin)
 - RU_07 As a returning user I would like to be able apply filters when searching, for example only seeing charge points suitable for my vehicle 
 - RU_08 As a returning user I would LOVE to be able to combine journey planning with EV locations, rather than using 2 separate apps (google maps for journey planning,  and charge point maps for charging points) which I then need to manually combine
 - RU_09 As a user I would LOVE to be able to estimate the charging time needed for my vehicle at a particular charging point
-- SO_04 As website administrator I would like to share user feedback on individual charging point with other users (e.g. faulty stations)
 
 ## UX Design Decisions
 ----------------
@@ -196,7 +194,6 @@ A consistent navbar is seen on all site pages.  The Navbar is respnsive and wil 
 This satisfies user stories:
 * FTU02 ease of navigation,
 and also satisfies the core requirements for this ESG project that the site be fully usable.
-[screenprint navbar]()
 
 <details><summary>Navbar</summary>
 <img src="https://stef-cruz.github.io/power-up-point/assets/readme_files/sp-navbar1.png">
@@ -210,35 +207,51 @@ and also satisfies the core requirements for this ESG project that the site be f
 
 ### F03 Consistent Imagery
 Icon and favicon
+The PowerUpPoint icon is used consistently throughout the site and a complementary favicon relects this.
+[Icon and favicon](!https://stef-cruz.github.io/power-up-point/assets/readme_files/sp-icon-and-favicon.png)
 
 ### F04 Responsiveness
-The site is fully responsive and displays well on different screen sizes.  See here various site pages on different devices.
-[responsivenss screenprint](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/responsiveness-sp1.png)
+The site is fully responsive and displays well on different screen sizes.  See [here](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/responsiveness-sp1.png) for  various site pages on different devices.
 
-Can also be tested at this [link](https://ui.dev/amiresponsive?url=https://stef-cruz.github.io/power-up-point/index.html)
+Can also be dynamically tested at this [link](https://ui.dev/amiresponsive?url=https://stef-cruz.github.io/power-up-point/index.html)
 
 ### F05 Charging Point details
-Once the user clicks on a given charging point on the map, an attribute card, which gives the user information to decide whether this charging point is of interest to them.  This satisfies user stories  FTU03 first-time user evaluating suitability of charing points, and RU03 ability for returning user to see more information about charging points
+Once the user clicks on a given charging point on the map, an attribute card, which gives the user information to decide whether this charging point is of interest to them.  
+This satisfies the following user stories:
+* FTU03 first-time user evaluating suitability of charing points, 
+* RU03 ability for returning user to see more information about charging points
+* SO03 system owner wish to show 'rich' data per charging point 
 
-[screenprint]()
-[additional screenprint]()
+![chargepoint details1](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-cp-details1.png)
+![chargepoint details2](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-cp-details2.png)
 
 ### F06 Status Display
-User comments, e.g. charging point status, are visible as an additional panel when the user clicks on a particular charging point.  This satisfies user story  
+User comments, e.g. charging point status, are visible as an additional panel when the user clicks on a particular charging point.  This satisfies user story S04, the ability to share user feedback (e.g. faulty stations) with other users.  
+
+### F07 User feedback
+When a charging point is selected, a context-specific panel is displayed below the map.  This allows capture of charging point status.
+![enter charging point status](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-cp-status.png)
 
 
-
-### F07 Drive to location
+### F08 Drive to location
 Within the charging point details, a link to 'navigate to point; is avilable, this uses Google APIs to open a new tab with a map routing the user from their current location (as best understood by Google) to the charging point.
 This satifies user story FTU04 user wishing to get mapped directions from their location to the charging point location.
+![Select navigate to charging point](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-navigate1.png)
 
-### F07 What we do
-... some text here to describe the sites mission statement
+![](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-navigate2.png)
 
-### F08 Who we are
+### F09 What we do
+This is the mission statement for the site, and is located on the main landing page.  This contributes to user stories FTU01, FTU02 clarity of purpose and navigation.
+![mission statement](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-what-we-do.png)
+
+### F10 Charging times
+A reference table of estimated charging times for particular vehicles/ plug type combinations is given on the landing page.
+![mission statement](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-charging-times.png)
+
+### F11 Who we are
 ... some text from Simas here to describe why we setup this page, the details included, and some of the features within it.
 
-### F09 Open-Source dataset
+### F11 Open-Source dataset
 An open-source charging point dataset was identified by the team, this provided multi-vendor charging point data and included APIs to access (and potentially, in the future, add to) the data.  A well as providing a decent programming challenge, this satisfies user stories SO02 multi-vendor dataset, SO03 existing open-source data which is maintained and updated frequently.
 <br>
 [Dataset provider details](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-opendata1.jpg)
