@@ -263,6 +263,7 @@ footer {
     padding: 1em;
     background: rgba(53, 151, 16, 0.35);
     border-radius: 10px;
+    position: relative;
     /* Add shadow if time */
 }
 
@@ -318,6 +319,13 @@ textarea {
     width: 8em;
     padding: 0.5em;
     border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+#comment {
+    margin-bottom: 4em;
 }
 
 @media (min-width: 500px) {
