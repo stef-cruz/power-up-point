@@ -68,15 +68,34 @@ function addMarkers(map, markerData) {
     let content =
       '<div class="infowindow">' +
       '<div class="infowindow_group">' +
+
       '<div class="navigate_button">' +
       // DMcC - added navigation URL with the charging point lat/long.... 
       '<a href=' + 'https://www.google.com/maps/dir/?api=1&destination=' + chargingPoint.lat + ',' + chargingPoint.long +' target='+'_blank'+'>Navigate to Point</a>' +
       '</div>' +
+
+      '<div class="infowindow_item">' +
+      '<h3><i class="fa-solid fa-circle infowindow_item_red_light"></i> ' + 'CURRENTLY OUT OF ORDER' + '</h3>' +
+      '</div>' +
+
+      '<div class="infowindow_item info_field">' +
+        '<h2><span><i class="fa-regular fa-comment-dots"></i> User Feedback</span> ' + '</h2>' +
+        '<div class="user_input_container">' +
+            '<div class="user_input_timestamp">' +
+              '<img src="assets/images/test-user.png" alt="User profile picture"><p><span><a>Alex Doe</a></span>- Wed, 1 September 2023, 2:35 PM</p>' +
+            '</div>' +
+            '<div class="user_input_text">' +
+            '<p>This location is not working, I wasted my time. I connected the car and took me a while to notice that it was not charging at all.</p>' +
+            '</div>' +
+        '</div>' +
+      '</div>' +
+
       '<div class="infowindow_item">' +
       '<h2>' + '<i class="fa-solid fa-location-dot"></i>' + ' ' + chargingPoint.title + '</h2>' +
       '<p>' + chargingPoint.full_address + '</p>' +
       '<p>Lat/Long: ' + chargingPoint.lat + ', ' + chargingPoint.long + '</p>' +
       '</div>' +
+
       '<div class="infowindow_item">' +
       '<h2><span><i class="fa-solid fa-gas-pump"></i> Equipment Details</span>' + '</h2>' +
       '<p>Is operational? ' + chargingPoint.is_operational + '</p>' +
@@ -84,25 +103,16 @@ function addMarkers(map, markerData) {
       '<p>Connection type: ' + chargingPoint.connection_type_title + '</p>' +
       '<p>Operator Info: ' + chargingPoint.operator_info_title + '</p>' +
       '</div>' +
+
       '<div class="infowindow_item">' +
       '<h2><span><i class="fa-regular fa-credit-card"></i> Payment Information</span>' + '</h2>' +
       '<p>Pay at location? ' + chargingPoint.pay_at_location + '</p>' +
       '<p>Usage Type ' + chargingPoint.usage_type + '</p>' +
       '<p>Usage Cost ' + chargingPoint.usage_cost + '</p>' +
       '</div>' +
-      '<div class="infowindow_item info_field">' +
-      '<h2><span><i class="fa-regular fa-comment-dots"></i> Community Information</span> ' + '</h2>' +
-      '<div class="user_input_container">' +
-      '<div class="user_input_timestamp">' +
-        '<img src="assets/images/test-user.png" alt="User profile picture"><p><span><a>Alex Doe</a></span>- Wed, 20 January 2023, 2:35 PM</p>' +
+
       '</div>' +
-      '<div class="user_input_text">' +
-      '<p>This location is not working, I wasted my time. I connected the car and took me a while to notice that it was not charging at all. Waste of time. </p>' +
-      '</div>' +
-      '</div>' +
-      '</div>' +
-    '</div>'
-    '</div>';
+      '</div>';
 
     let cardContent = 
     '<div class="infowindow_item">' +

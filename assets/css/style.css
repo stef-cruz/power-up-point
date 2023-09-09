@@ -851,3 +851,7 @@ th, td {
   text-decoration: none;
   color: #9b9b9b;
 }
+
+.infowindow_item_red_light {
+  color: red;
+}
