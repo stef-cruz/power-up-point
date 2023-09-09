@@ -246,6 +246,12 @@ footer {
 
 .reason > p {
     display: inline-block;
+    text-align: center;
+}
+
+.reason-extra > p {
+    display: inline-block;
+    text-align: center;
 }
 
 .form-container {
@@ -316,7 +322,7 @@ textarea {
 
 @media (min-width: 500px) {
     .form-container {
-        width: 25em;
+        width: 30em;
     }
 }
 
@@ -326,10 +332,22 @@ textarea {
         flex-direction: row;
         justify-content: space-between;
         height: 4em;
+        margin-bottom: 1em;
     }
     .reason-icon {
         margin-right: 2em;
     }
+    .form-container {
+        width: 38em;
+        padding: 2.5em;
+    }
+    .reason > p {
+        text-align: left;
+    }
+    .reason-extra > p {
+        text-align: left;
+    }
+    
 }
 
 /* Home Page page specific */
