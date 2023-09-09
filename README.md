@@ -32,25 +32,10 @@
     1. [Languages](#langugages)
     2. [Frameworks and Tools](#frameworks--tools)
 8. [Validation](#validation)
-    1. [HTML Validation](#html-validation)
-    2. [CSS Validation](#css-validation)
-    3. [Javascript Validation](#javascript-validation)
-    4. [Accessibility](#accessibility)
-    5. [Performance](#performance)
-    6. [Multi-device Testing](#multi-device-testing)
-    7. [Multi-browser Testing](#multi-browser-testing)
-    8. [Testing user stories](#testing-user-stories)
-    9. [Unfixed Bugs](#unfixed-bugs)
-9. [Accessibility](#accessibility)
-10. [Performance](#performance)
-11. [Deployment](#deployment)
-12. [Credits](#credits)
-    1. [Content](#content)
-    2. [Media](#media)
-    3. [Code](#code)
-    4. [References](#references)
-    5. [Acknowledgements](#acknowledgements)
-
+    1. [Testing user stories](#testing-user-stories)
+    2. [Unfixed Bugs](#unfixed-bugs)
+9. [Credits](#credits)
+    
 
 ## About
 --------
@@ -78,7 +63,7 @@ PowerUpPoint is a site to assist Electric Vehicle users in locating a charging p
 ### UX Design Strategy
 Existing websites offering charging location info were evaluated, and user interviews taken to determine pain points.  Particular attention was paid to existing datasets and their limitations.
 
-While PowerUpPoint version 1 does not address all of the known UX issues, it is specifically designed as a scalable solution which can be incrementally developed to add new functionality.
+PowerUpPoint version 1 is designed as a scalable solution which can be incrementally developed to add new functionality.
 
 ### UX Design Strategy - Problem Statement
 
@@ -232,7 +217,6 @@ User comments, e.g. charging point status, are visible as an additional panel wh
 When a charging point is selected, a context-specific panel is displayed below the map.  This allows capture of charging point status.
 ![enter charging point status](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-cp-status.png)
 
-
 ### F08 Drive to location
 Within the charging point details, a link to 'navigate to point; is avilable, this uses Google APIs to open a new tab with a map routing the user from their current location (as best understood by Google) to the charging point.
 This satifies user story FTU04 user wishing to get mapped directions from their location to the charging point location.
@@ -249,7 +233,12 @@ A reference table of estimated charging times for particular vehicles/ plug type
 ![mission statement](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-charging-times.png)
 
 ### F11 Who we are
-... some text from Simas here to describe why we setup this page, the details included, and some of the features within it.
+This is a 'team profile' page with details of each team member and links to their git hub and linkedin
+![about us](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/about-us.png)
+
+### F12 Contact Us page
+This page satisfies user requirements RU04, the ability for returning users to provide general website feedback
+![contact us](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-contact-us.png)
 
 ### F11 Open-Source dataset
 An open-source charging point dataset was identified by the team, this provided multi-vendor charging point data and included APIs to access (and potentially, in the future, add to) the data.  A well as providing a decent programming challenge, this satisfies user stories SO02 multi-vendor dataset, SO03 existing open-source data which is maintained and updated frequently.
@@ -262,12 +251,7 @@ An open-source charging point dataset was identified by the team, this provided 
 [with open access via API]((https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-opendata3.jpg))
 
 
-### F10
-
-
-
 ## Technologies used
-In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
 Figma (for wireframes)
 HTL
 CSS
@@ -276,26 +260,10 @@ Javascript
 ## Credits
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
 * The various users we interviewed to discover 'points of pain' in their EV charging experience.
+* OpenChargeMap organisation for provision of collated charging point information and API in an open and accessible format
+* Google Maps for provision of mapping data and capabilities and associated APIs  
 
 ### Content
 https://openchargemap.org/site/ An open-source portal providing details of EV charging points, with associated API
 Google Maps: Provision of map-based hosting
-
-- 🌐 [External Resource 1]
-- 🌐 [External Resource 2]
-
-
-
-
-
-Headings as provided for hackathon - double check these are all covered!
-## Deployment
-[Intro](#intro)  
-[Goal](#goal) 
-[User Stories](#user-stories)  
-[Wireframes](#wireframes)  
-[Colour Scheme](#colour-scheme)  
-[Typography](#typography)  
-[Technologies used](#technologies-used)  
-[Credits](#credits)  
 
