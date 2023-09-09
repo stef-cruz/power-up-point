@@ -324,6 +324,9 @@ textarea {
     .form-container {
         width: 30em;
     }
+    form {
+        margin-left: 1em;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -346,6 +349,11 @@ textarea {
     }
     .reason-extra > p {
         text-align: left;
+    }
+    form {
+        margin: 0 auto;
+        width: 20em;
+        margin-top: 3em;
     }
     
 }
