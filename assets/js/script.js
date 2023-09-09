@@ -46,6 +46,10 @@ function addMarkers(map, markerData) {
     // Turn off spinner display once markers start loading
     const spinner = document.getElementById("spinner");
     spinner.style.display= "none";
+
+    // Turn off spinner overlay display once markers start loading
+    const spinneroverlay = document.getElementById("spinner_overlay");
+    spinneroverlay.style.display= "none";
   
     // Loop through data and pass it on to infoWindow
 

@@ -460,11 +460,13 @@ textarea {
 /* Home Page Map */
 
 /* Loading Spinner */
+.map-section {
+    position: relative;
+}
+
 #spinner {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
+    margin: auto;
     left: 0;
     right: 0;
     top: 50%;
@@ -476,7 +478,17 @@ textarea {
     width: 120px;
     height: 120px;
     animation: spin 4s linear 2s;
-    z-index: 1;
+    z-index: 2;
+}
+
+#spinner_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Place it below your_div */
 }
 
 @keyframes spin {
