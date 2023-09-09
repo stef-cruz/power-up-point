@@ -332,6 +332,14 @@ textarea {
     margin-bottom: 5em;
 }
 
+.center_radio_buttons {
+    margin-right: 135px;
+}
+
+.center-radio-buttons label {
+    padding-right: 5px; 
+}
+
 @media (min-width: 500px) {
     .form-container {
         width: 30em;
