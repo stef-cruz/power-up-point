@@ -92,24 +92,49 @@ function addMarkers(map, markerData) {
       '</div>' +
       '<div class="infowindow_item info_field">' +
       '<h2><span><i class="fa-regular fa-comment-dots"></i> Community Information</span> ' + '</h2>' +
-      '<textarea class="infowindow_text_area">' + '</textarea>'+
+      '<div class="user_input_container">' +
+      '<div class="user_input_timestamp">' +
+        '<img src="assets/images/test-user.png" alt="User profile picture"><p><span><a>Alex Doe</a></span>- Wed, 20 January 2023, 2:35 PM</p>' +
+      '</div>' +
+      '<div class="user_input_text">' +
+      '<p>This location is not working, I wasted my time. I connected the car and took me a while to notice that it was not charging at all. Waste of time. </p>' +
+      '</div>' +
+      '</div>' +
       '</div>' +
     '</div>'
     '</div>';
 
-    InfoWindow(marker, content);
+    let cardContent = 
+    '<div class="infowindow_item">' +
+    '<h2>' + '<i class="fa-solid fa-location-dot"></i>' + ' ' + chargingPoint.title + '</h2>' +
+    '</div>' +
+    '<div class="infowindow_item info_field"> ' +
+      '<p>Leave a review. Is this charging station operational?' + '</p>' +
+      '<textarea class="infowindow_text_area">  </textarea>' +
+    '<div class="navigate_button">' +
+    '<a>' + 'Submit status' +'</a>' +
+    '</div>' +
+    '</div>';
+
+    InfoWindow(marker, content, cardContent);
   });
 
   let addInfoWindow = new google.maps.InfoWindow();
+  let card = document.querySelector(".infowindow");
 
-  function InfoWindow(marker, content) {
+  function InfoWindow(marker, content, cardContent) {
     google.maps.event.addListener(marker, 'click', function () {
       // set content
       addInfoWindow.setContent(content);
       // open infowindow on the marker
       addInfoWindow.open(map, marker);
-      // waitForElementToDisplay("#js-infowindow__lat", function(){alert();}, 10, 9000);
+      addCardContent(cardContent);
     });
+  }
+
+  function addCardContent(cardContent) {
+    card.innerHTML = '';
+    card.innerHTML = cardContent;
   }
 }
 
