@@ -353,8 +353,17 @@ textarea {
 /* About Us page specific */
 
 #team-intro {
-    font-size: 1.6em;
-    padding: 2em;
+    line-height: 1.4;
+    padding: 2em 15em;
+}
+
+#team-intro div {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#team-intro div i {
+    color: #41B914;
 }
 
 #team-container {
@@ -375,6 +384,22 @@ textarea {
     margin: 0 auto;
 }
 
+.team-card-icon-container {
+    width: fit-content;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.team-card-icon-container a:visited {
+    color: black;
+}
+
+.team-card-icon-container i {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2em;
+    padding: 0 0.5em;
+}
+
 .team-picture-container {
     height: 15em;
     overflow: hidden;
@@ -385,6 +410,7 @@ textarea {
 }
 
 .team-card img {
+    height: 15em;
     width: 15em;
 }
 
@@ -398,20 +424,16 @@ textarea {
     bottom: 1em;
     background: linear-gradient(rgba(53,151,16, 1) 0%, rgba(255,255,255,1) 20%);
     border-top: 1px solid black;
-}
-
-.team-card_info span, .team-card_info i {
-    position: absolute;
+    box-shadow: 0 -3px 8px rgba(53,151,16, 0.8);
 }
 
 .team-card_info span {
-    font-size: 2em;
+    display: block;
+    position: relative;
+    font-size: 1.6em;
+    line-height: 1.4;
     left: 1em;
-}
-
-.team-card_info i {
-    font-size: 2.8em;
-    top: 2.8em;
+    margin-top: 1.5em;
 }
 
 .github-icon {
@@ -448,7 +470,7 @@ textarea {
 /* Hover effect for team member's card pop up effect */
 
 .team-card:hover .team-card_info {
-    transform: translateY(-13em);
+    transform: translateY(-10em);
     transition: 0.3s ease-in-out;
 }
 
