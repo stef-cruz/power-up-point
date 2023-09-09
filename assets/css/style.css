@@ -447,12 +447,12 @@ textarea {
 
 /* Hover effect for team member's card pop up effect */
 
-.team-card:hover .team-card_info, .team-card:focus .team-card_info {
+.team-card:hover .team-card_info {
     transform: translateY(-13em);
     transition: 0.3s ease-in-out;
 }
 
-.team-card:hover .team-card_text, .team-card:focus .team-card_text {
+.team-card:hover .team-card_text {
     transform: skewX(5deg);
     transform-origin: bottom right;
 }
