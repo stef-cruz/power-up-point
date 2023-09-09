@@ -798,3 +798,56 @@ footer {
 .footer-logo {
   height: 100%;
 }
+
+/* Home page table */
+
+table {
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 0.1px dotted #ccc;
+}
+
+.ev-info-container {
+  text-align: center;
+  padding: 3rem;
+  background-color: #e7e7e7;
+}
+
+.table-cell-1 {
+  padding: 1rem;
+  background-color: #41B914;
+}
+
+.table-cell-2 {
+  padding: 1rem;
+  background-color: #b8e3a7;
+}
+
+.table-cell-3 {
+  padding: 1rem;
+  background-color: #f1fded;
+}
+
+.table-cell-head {
+  padding: 1rem;
+}
+
+.table-cell-head-2 {
+  padding: 1rem;
+  font-size: 14px;
+  color: #44841a;
+}
+
+.ev-info-table-info-text {
+  text-align: left;
+  padding: 1rem;
+  text-align: center;
+}
+
+.ev-info-table-info-text p a {
+  text-decoration: none;
+  color: #9b9b9b;
+}
