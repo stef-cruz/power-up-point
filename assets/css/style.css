@@ -211,25 +211,60 @@ footer {
 }
 
 /* Contact Us page specific */
-.contact-reasons-container {
-  margin: 2em;
+
+.reason {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 6em;
+    margin-bottom: 2em;
 }
 
-.contact-reason {
-  text-align: center;
-  margin-bottom: 2em;
+.reason-extra {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7.2em;
+    margin-bottom: 1em;
+}
+
+.reason-icon {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 2em;
+    height: 1.5em;
+    padding: 0.2em;
+}
+
+.reason-icon > i {
+    color: #E06315;
+    font-size: 2em;
+}
+
+.reason > p {
+    display: inline-block;
+    text-align: center;
+}
+
+.reason-extra > p {
+    display: inline-block;
+    text-align: center;
 }
 
 .form-container {
-  box-sizing: border-box;
-  margin: 0 auto;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  width: 20em;
-  padding: 1em;
-  border: 3px solid #e06315;
-  border-radius: 10px;
-  /* Add shadow if time */
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 20em;
+    padding: 1em;
+    background: rgba(53, 151, 16, 0.35);
+    border-radius: 10px;
+    position: relative;
+    /* Add shadow if time */
 }
 
 .form-heading {
@@ -280,16 +315,67 @@ textarea {
 }
 
 #submit-button {
-  margin: 0 auto;
-  width: 8em;
-  padding: 0.5em;
-  border-radius: 5px;
+    margin: 0 auto;
+    width: 6em;
+    padding: 0.5em;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #E06315;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#comment {
+    margin-bottom: 5em;
 }
 
 @media (min-width: 500px) {
-  .form-container {
-    width: 25em;
-  }
+    .form-container {
+        width: 30em;
+    }
+    form {
+        margin-left: 1em;
+    }
+    textarea {
+        width: 24em;
+    }
+    input {
+        width: 18em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .reason, .reason-extra {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 4em;
+        margin-bottom: 1em;
+    }
+    .reason-icon {
+        margin-right: 2em;
+    }
+    .form-container {
+        width: 38em;
+        padding: 2.5em;
+    }
+    .reason > p {
+        text-align: left;
+    }
+    .reason-extra > p {
+        text-align: left;
+    }
+    form {
+        margin: 0 auto;
+        width: 22em;
+        margin-top: 3em;
+    }
+    #submit-button {
+        right: 40px;
+    }
 }
 
 /* Home Page page specific */
