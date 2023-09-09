@@ -199,16 +199,46 @@ a:hover {
 /* Footer specific styling */
 
 footer {
-  margin-top: 1rem;
-  width: 100%;
-  padding: 0.5rem;
-  line-height: 2rem;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  border-top: 1px solid black;
-  display: flex;
-  justify-content: space-between;
-}
+  
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient( 165deg, rgba(53, 151, 16, 0.95) 50%, rgba(65, 185, 20, 0.75) 100% );
+    color: white;
+  }
+  
+  .social-links > li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 2em;
+    position: relative;
+    right: 1em;
+    margin: 0 0.5em;
+  }
+  
+  #github-footer-icon:hover, #github-footer-icon:hover {
+      color: rgba(0, 0, 0, 0.7)
+  }
+  
+  #contact-us-footer-icon:hover, #contact-us-footer-icon:hover {
+      color: #e06315;
+  }
+  
+  .footer-logo img {
+    margin-top: 1.5em;
+    width: 15em;
+  }
+  
+  footer i {
+      color:white;
+      font-size: 1.3em;
+  }
+  
+  .copyright {
+      text-align: center;
+      padding: 0 1em;
+  }
 
 /* Contact Us page specific */
 
@@ -781,22 +811,6 @@ textarea {
     .feature-container_icon {
         margin-top: 20px;
     }
-}
-
-.flex-container {
-  display: flex;
-}
-.social-links > li {
-  list-style-type: none;
-  display: inline-block;
-  margin-right: 5px;
-}
-footer {
-  height: 10px;
-}
-
-.footer-logo {
-  height: 100%;
 }
 
 /* Home page table */
