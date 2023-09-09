@@ -460,7 +460,7 @@ textarea {
 }
 
 .hero {
-  width: 100vw;
+  width: 100%;
   padding: 0.7rem 0.2rem 0.7rem 0.2rem;
   color: white;
   background: linear-gradient(
@@ -828,6 +828,7 @@ th, td {
   text-align: center;
   padding: 3rem;
   background-color: #e7e7e7;
+  overflow-x: auto;
 }
 
 .table-cell-1 {
