@@ -384,6 +384,16 @@ textarea {
     margin: 0 auto;
 }
 
+.team-card-icon-container {
+    width: fit-content;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.team-card-icon-container i {
+    font-size: 2em;
+}
+
 .team-picture-container {
     height: 15em;
     overflow: hidden;
