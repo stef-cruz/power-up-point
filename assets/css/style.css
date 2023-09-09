@@ -356,8 +356,22 @@ textarea {
 /* About Us page specific */
 
 #team-intro {
-  font-size: 1.6em;
-  padding: 2em;
+    line-height: 1.4;
+    padding: 2em 5vw 0.5em;
+    background-color: rgba(53, 151, 16, 0.35);
+    width: 80%;
+    margin: 3em auto 0;
+    border-radius: 10px;
+    max-width: 47em;
+}
+
+#team-intro div {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#team-intro div i {
+    color: #41B914;
 }
 
 #team-container {
@@ -378,6 +392,22 @@ textarea {
   margin: 0 auto;
 }
 
+.team-card-icon-container {
+    width: fit-content;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.team-card-icon-container a:visited {
+    color: black;
+}
+
+.team-card-icon-container i {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2em;
+    padding: 0 0.5em;
+}
+
 .team-picture-container {
   height: 15em;
   overflow: hidden;
@@ -388,37 +418,30 @@ textarea {
 }
 
 .team-card img {
-  width: 15em;
+    height: 15em;
+    width: 15em;
 }
 
 .team-card_info {
-  width: 14em;
-  height: 16em;
-  background-color: #ffffff;
-  border-radius: 10px;
-  position: relative;
-  left: 0.5em;
-  bottom: 1em;
-  background: linear-gradient(
-    rgba(53, 151, 16, 1) 0%,
-    rgba(255, 255, 255, 1) 20%
-  );
-  border-top: 1px solid black;
-}
-
-.team-card_info span,
-.team-card_info i {
-  position: absolute;
+    width: 14em;
+    height: 16em;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+    left: 0.5em;
+    bottom: 1em;
+    background: linear-gradient(rgba(53,151,16, 1) 0%, rgba(255,255,255,1) 20%);
+    border-top: 1px solid black;
+    box-shadow: 0 -3px 8px rgba(53,151,16, 0.8);
 }
 
 .team-card_info span {
-  font-size: 2em;
-  left: 1em;
-}
-
-.team-card_info i {
-  font-size: 2.8em;
-  top: 2.8em;
+    display: block;
+    position: relative;
+    font-size: 1.6em;
+    line-height: 1.4;
+    left: 1em;
+    margin-top: 1.5em;
 }
 
 .github-icon {
@@ -459,8 +482,8 @@ textarea {
 /* Hover effect for team member's card pop up effect */
 
 .team-card:hover .team-card_info {
-  transform: translateY(-13em);
-  transition: 0.3s ease-in-out;
+    transform: translateY(-10em);
+    transition: 0.3s ease-in-out;
 }
 
 .team-card:hover .team-card_text {
@@ -471,23 +494,35 @@ textarea {
 /* Home Page Map */
 
 /* Loading Spinner */
+.map-section {
+    position: relative;
+}
+
 #spinner {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  left: 0;
-  right: 0;
-  top: 50%;
-  border: 16px solid #f3f3f3;
-  /* Light grey */
-  border-top: 16px solid rgba(65, 185, 20, 0.75);
-  /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 4s linear 2s;
-  z-index: 1;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid rgba(65, 185, 20, 0.75);
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 4s linear 2s;
+    z-index: 2;
+}
+
+#spinner_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Place it below your_div */
 }
 
 @keyframes spin {
@@ -569,13 +604,59 @@ textarea {
 }
 
 .info_field textarea {
-  margin: 0;
+    margin: 0;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.user_input_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_input_timestamp {
+  text-align: left;
+  flex-direction: row;
+  height: 2.5rem;
+  display: inline-flex;
+}
+
+.user_input_timestamp p {
+  text-align: left;
+  line-height: inherit;
+}
+
+.user_input_timestamp img {
+  height: 2.5rem;
+  padding-right: 1rem;
+}
+
+.user_input_timestamp span a {
+  text-decoration: underline;
+  color: blue;
+  padding-right: 0.5rem;
+}
+
+.user_input_text {
+  text-align: left;
+  flex-direction: row;
+}
+
+.user_input_text p {
+  padding-left: 3.5rem;
+  margin-top: 0;
 }
 
 .card_button {
   text-decoration: none;
   color: black;
   background-color: #e06315;
+}
+
+.infowindow-homepage {
+  max-width: 900px;
+  min-width: 300px;
+  margin: 3rem auto;
 }
 
 /* This is now covered in universal h1 styling */
