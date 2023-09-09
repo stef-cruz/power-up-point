@@ -119,11 +119,13 @@ function addMarkers(map, markerData) {
     '<h2>' + '<i class="fa-solid fa-location-dot"></i>' + ' ' + chargingPoint.title + '</h2>' +
     '</div>' +
     '<div class="infowindow_item info_field"> ' +
+    '<p>Leave a review. Is this charging station operational?' + '</p>' +
     '<div class="center_radio_buttons">' +
     '<label><input type="radio" name="functionability" value="male" required>Functioning</label>' +
+    '</div>' +
+    '<div class="center_radio_buttons">' +
     '<label><input type="radio" name="functionability" value="female">Out of Order</label>' +
     '</div>' +
-    '<p>Leave a review. Is this charging station operational?' + '</p>' +
     '<textarea class="infowindow_text_area">  </textarea>' +
     '<div class="navigate_button">' +
     '<a>' + 'Submit status' +'</a>' +
