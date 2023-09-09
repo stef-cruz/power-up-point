@@ -1,117 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Accelerating the adoption of sustainable transportation by seamlessly connecting electric vehicle owners with the nearest and most convenient charging stations.">
-    <meta name="keywords" content="electric car, charging point, car charging, sustainable transport, charging point map">
-
-    <!-- Link to css styling sheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Link to favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
-
-    <title>PowerUpPoint</title>
-</head>
-<body>
-
-    <!-- Header -->
-    <header>
-        <a href="index.html">
-          <img class="logo" src="assets/images/power-up-point-logo.png" alt="PowerUpPoint Logo">
-      </a>
-        <nav class="desktop-nav">
-            <ul id="menu">
-                <li><a href="index.html">FIND CHARGING FAST</a></li>
-                <li>.</li>
-                <li><a href="about-us.html">WHO WE ARE</a></li>
-                <li>.</li>
-                <li><a href="contact.html" class="active" aria-current="page">CONTACT US</a></li>
-            </ul>   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Accelerating the adoption of sustainable transportation by seamlessly connecting electric vehicle owners with the nearest and most convenient charging stations.">
+        <meta name="keywords" content="electric car, charging point, car charging, sustainable transport, charging point map">
+    
+        <!-- Link to css styling sheet -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    
+        <!-- Link to favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    
+        <title>PowerUpPoint</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <a href="index.html">
+              <img class="logo" src="assets/images/power-up-point-logo.png" alt="PowerUpPoint Logo">
+          </a>
+            <nav class="desktop-nav">
+                <ul id="menu">
+                    <li><a href="index.html">FIND CHARGING FAST</a></li>
+                    <li>.</li>
+                    <li><a href="about-us.html">WHO WE ARE</a></li>
+                    <li>.</li>
+                    <li><a href="contact.html" class="active" aria-current="page">CONTACT US</a></li>
+                </ul>   
+            </nav>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </header>
+        <nav class="mobile-nav">
+            <a href="index.html">FIND CHARGING FAST</a>
+            <a href="about-us.html">WHO WE ARE</a>
+            <a href="contact.html" class="active" aria-current="page">CONTACT US</a>
         </nav>
-        <button class="hamburger">
-            <div class="bar"></div>
-        </button>
-    </header>
-    <nav class="mobile-nav">
-        <a href="index.html">FIND CHARGING FAST</a>
-        <a href="https://stef-cruz.github.io/power-up-point/#what-we-do">WHAT WE DO</a>
-        <a href="about-us.html">WHO WE ARE</a>
-        <a href="contact.html" class="active" aria-current="page">CONTACT US</a>
-    </nav>
-
-    <!-- Main section providing users with the opportunity to get in touch -->      
-    <main>
-        <section class="hero">
-            <h1>CONTACT US</h1>
-            <p>We would love to hear from you!</p>
-        </section>
-        <section class="contact-reasons-container">
-            <div class="contact-reason">Have you come across a charging point not on our map?</div>
-            <div class="contact-reason">Is there further information it would be helpful for others to know about a charging point?</div>
-            <div class="contact-reason">Do you have any suggestions for how this website could be further improved?</div>
-        </section>
-        <section class="form-container">
-            <h2 class="form-heading">Contact Us</h2>
-            <form action="" class="">
-                <!-- Gain user information -->
-                <div class="user-info-container">
-                    <div class="labels">
-                        <label for="name" class="form-item">Name:</label>
-                        <label for="email" class="form-item">Email:</label>
+        <!-- Main section providing users with the opportunity to get in touch -->      
+        <main>
+            <section class="hero">
+                <h1>CONTACT US</h1>
+                <p>We would love to hear from you!</p>
+            </section>
+            <section class="contact-reasons-container">
+                <div class="contact-reason">Have you come across a charging point not on our map?</div>
+                <div class="contact-reason">Is there further information it would be helpful for others to know about a charging point?</div>
+                <div class="contact-reason">Do you have any suggestions for how this website could be further improved?</div>
+            </section>
+            <section class="form-container">
+                <h2 class="form-heading">Contact Us</h2>
+                <form action="" class="">
+                    <!-- Gain user information -->
+                    <div class="user-info-container">
+                        <div class="labels">
+                            <label for="name" class="form-item">Name:</label>
+                            <label for="email" class="form-item">Email:</label>
+                        </div>
+                        <div class="inputs">
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="form-item"
+                                required >
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-item"
+                                required >    
+                        </div>
                     </div>
-                    <div class="inputs">
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            class="form-item"
-                            required >
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            class="form-item"
-                            required >    
-                    </div>
-                </div>
-                <!-- Clarify reason for contact -->
-                <label for="contact-reason" class="form-item">What would you like to contact us about?</label>
-                <select id="contact-reason" name="contact-reason" class="form-item" required>
-                    <option value="existing-charging-point">An existing charging point</option>
-                    <option value="new-charging-point">A new charging point</option>
-                    <option value="website-suggestion">Website suggestion</option>
-                </select>
-                <!-- User comment -->
-                <br>
-                <label for="comment" class="form-item">Your comment:</label>
-                <textarea
-                    id="comment"
-                    name="comment"
-                    class="form-item"
-                    placeholder="Please provide us with as much detail as possible"
-                    required>
-                </textarea>
-                <!-- Submit the form -->
-                <input 
-                    type="submit"
-                    value="Submit"
-                    id="submit-button">
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            Logo to go here
-        </div>
-        <div>
-            <p>Created by Greener Today 2023</p>
-        </div>
-    </footer>
-
-    <!-- Link to the JavaScript file -->
-    <script src="assets/js/script.js"></script>
-</body>
+                    <!-- Clarify reason for contact -->
+                    <label for="contact-reason" class="form-item">What would you like to contact us about?</label>
+                    <select id="contact-reason" name="contact-reason" class="form-item" required>
+                        <option value="existing-charging-point">An existing charging point</option>
+                        <option value="new-charging-point">A new charging point</option>
+                        <option value="website-suggestion">Website suggestion</option>
+                    </select>
+                    <!-- User comment -->
+                    <br>
+                    <label for="comment" class="form-item">Your comment:</label>
+                    <textarea
+                        id="comment"
+                        name="comment"
+                        class="form-item"
+                        placeholder="Please provide us with as much detail as possible"
+                        required>
+                    </textarea>
+                    <!-- Submit the form -->
+                    <input 
+                        type="submit"
+                        value="Submit"
+                        id="submit-button">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div>
+                Logo to go here
+            </div>
+            <div>
+                <p>Created by Greener Today 2023</p>
+            </div>
+        </footer>
+    
+        <!-- Link to the JavaScript file -->
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>

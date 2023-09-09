@@ -1,107 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Accelerating the adoption of sustainable transportation by seamlessly connecting electric vehicle owners with the nearest and most convenient charging stations.">
+    <meta name="keywords" content="electric car, charging point, car charging, sustainable transport, charging point map">
+  
+    <!-- Link to css styling sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  
+    <!-- Link to favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Accelerating the adoption of sustainable transportation by seamlessly connecting electric vehicle owners with the nearest and most convenient charging stations.">
-  <meta name="keywords" content="electric car, charging point, car charging, sustainable transport, charging point map">
-
-  <!-- Link to css styling sheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- Link to favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
-
-  <title>PowerUpPoint</title>
-</head>
-
-<body>
-  <header>
-    <a href="index.html">
-      <img class="logo" src="assets/images/power-up-point-logo.png" alt="PowerUpPoint Logo">
-    </a>
-    <nav class="desktop-nav">
-      <ul id="menu">
-        <li><a href="index.html" class="active" aria-current="page">FIND CHARGING FAST</a></li>
-        <li>.</li>
-        <li><a href="about-us.html">WHO WE ARE</a></li>
-        <li>.</li>
-        <li><a href="contact.html">CONTACT US</a></li>
-      </ul>
+    <!-- Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/c91c32f3e9.js" crossorigin="anonymous"></script>
+  
+    <title>PowerUpPoint</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img class="logo" src="assets/images/power-up-point-logo.png" alt="PowerUpPoint Logo">
+      </a>
+      <nav class="desktop-nav">
+        <ul id="menu">
+          <li><a href="index.html" class="active" aria-current="page">FIND CHARGING FAST</a></li>
+          <li>.</li>
+          <li><a href="about-us.html">WHO WE ARE</a></li>
+          <li>.</li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </header>
+    <nav class="mobile-nav">
+      <a href="index.html" class="active" aria-current="page">FIND CHARGING FAST</a>
+      <a href="about-us.html">WHO WE ARE</a>
+      <a href="contact.html">CONTACT US</a>
     </nav>
-    <button class="hamburger">
-      <div class="bar"></div>
-    </button>
-  </header>
-  <nav class="mobile-nav">
-    <a href="index.html" class="active" aria-current="page">FIND CHARGING FAST</a>
-    <a href="https://stef-cruz.github.io/power-up-point/#what-we-do">WHAT WE DO</a>
-    <a href="about-us.html">WHO WE ARE</a>
-    <a href="contact.html">CONTACT US</a>
-  </nav>
-
-  <!-- Main section -->
-  <main class="main-index">
-
-    <section class="hero">
-      <h1>FIND CHARGING FAST</h1>
-      <p>Find electric vehicle charging stations for your EV</p>
-    </section>
-
-    <!-- Add a spinner -->
-    <div id="spinner">
-    </div>
-    <div id="map">
-    </div>
-
-
-    <hr class="features-divider">
-
-    <section class="features">
-      <!-- Hidden Anchor point added to allow nav link to correctly jump to the correct place -->
-      <h2>Power Up your EV<span class="anchor-point" id="what-we-do">a</span></h2>
-      <div class="feature-container">
-        <div class="feature-container_icon">
-          <img src="assets/images/icon_search.png" alt="Search icon">
-        </div>
-        <div class="feature-container_text">
-          <p>Easily locate charging stations for your electric vehicle (EV). Our intuitive search feature allows you to
-            find nearby charging options with just a few clicks. Say goodbye to range anxiety and explore a network of
-            charging points designed for your convenience.</p>
-        </div>
+    <!-- Main section -->
+    <main class="main-index">
+      <section class="hero">
+        <h1>FIND CHARGING FAST</h1>
+        <p>Find electric vehicle charging stations for your EV</p>
+      </section>
+      <!-- Add a spinner -->
+      <div id="spinner">
       </div>
-      <div class="feature-container">
-        <div class="feature-container_icon">
-          <img src="assets/images/icon_tree.png" alt="Tree icon">
-        </div>
-        <div class="feature-container_text">
-          <p>Join us in driving positive change for the planet. We're committed to sustainability by promoting electric
-            vehicle adoption. By choosing EVs and using our platform to find charging stations, you're making a green
-            choice that reduces emissions and helps protect the environment. Together, we're paving the way to a
-            cleaner, greener future..</p>
-        </div>
+      <div id="map">
       </div>
-      <div class="feature-container">
-        <div class="feature-container_icon"><img src="assets/images/icon_star.png" alt="Start icon"></div>
-        <div class="feature-container_text">
-          <p>Share your experiences and stay informed. Our review feature empowers you to provide valuable feedback on
-            charging stations. Plus, stay up to date with the latest user reviews and station information. Whether it's
-            praising a great charging experience or reporting issues, your insights help the EV community make informed
-            choices and improve charging infrastructure.</p>
-        </div>
+      <div class="features_box">
+        <hr class="features-divider">
+        <section class="features">
+          <!-- Hidden Anchor point added to allow nav link to correctly jump to the correct place -->
+          <h2>Power Up your EV<span class="anchor-point" id="what-we-do">a</span></h2>
+          <div class="feature-container">
+            <div class="feature-container_icon">
+              <img src="assets/images/icon_search.png" alt="Search icon">
+            </div>
+            <div class="feature-container_text">
+              <p>Easily locate charging stations for your electric vehicle (EV). Our intuitive search feature allows you to
+                find nearby charging options with just a few clicks. Say goodbye to range anxiety and explore a network of
+                charging points designed for your convenience.</p>
+            </div>
+          </div>
+          <div class="feature-container">
+            <div class="feature-container_icon">
+              <img src="assets/images/icon_tree.png" alt="Tree icon">
+            </div>
+            <div class="feature-container_text">
+              <p>Join us in driving positive change for the planet. We're committed to sustainability by promoting electric
+                vehicle adoption. By choosing EVs and using our platform to find charging stations, you're making a green
+                choice that reduces emissions and helps protect the environment. Together, we're paving the way to a
+                cleaner, greener future..</p>
+            </div>
+          </div>
+          <div class="feature-container">
+            <div class="feature-container_icon"><img src="assets/images/icon_star.png" alt="Start icon"></div>
+            <div class="feature-container_text">
+              <p>Share your experiences and stay informed. Our review feature empowers you to provide valuable feedback on
+                charging stations. Plus, stay up to date with the latest user reviews and station information. Whether it's
+                praising a great charging experience or reporting issues, your insights help the EV community make informed
+                choices and improve charging infrastructure.</p>
+            </div>
+          </div>
+        </section>
+        <hr class="features-divider">
       </div>
-    </section>
-
-    <hr class="features-divider">
-
-  </main>
-
-  <!-- Font Awesome Script -->
-  <script src="https://kit.fontawesome.com/b83175b9a4.js" crossorigin="anonymous"></script>
-  <!-- Link to the JavaScript file -->
-  <script src="assets/js/script.js"></script>
-  <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyahPifJNOEODhSoMTswXum-vuIfSDF8w&amp;callback=initMap&amp;libraries=places&amp;v=weekly"></script>
-</body>
+    </main>
+    <!-- Link to the JavaScript file -->
+    <script src="assets/js/script.js"></script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyahPifJNOEODhSoMTswXum-vuIfSDF8w&amp;callback=initMap&amp;libraries=places&amp;v=weekly"></script>
+  </body>
 </html>

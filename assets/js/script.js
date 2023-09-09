@@ -69,25 +69,25 @@ function addMarkers(map, markerData) {
       '<a href=' + 'https://www.google.com/maps/dir/?api=1&destination=' + chargingPoint.lat + ',' + chargingPoint.long +' target='+'_blank'+'>Navigate to Point</a>' +
       '</div>' +
       '<div class="infowindow_item">' +
-      '<h2>' + chargingPoint.title + '</h2>' +
+      '<h2>' + '<i class="fa-solid fa-location-dot"></i>' + ' ' + chargingPoint.title + '</h2>' +
       '<p>' + chargingPoint.full_address + '</p>' +
       '<p>Lat/Long: ' + chargingPoint.lat + ', ' + chargingPoint.long + '</p>' +
       '</div>' +
       '<div class="infowindow_item">' +
-      '<h2><span>Equipment Details</span>' + '</h2>' +
+      '<h2><span><i class="fa-solid fa-gas-pump"></i> Equipment Details</span>' + '</h2>' +
       '<p>Is operational? ' + chargingPoint.is_operational + '</p>' +
       '<p>Power kW: ' + chargingPoint.power_kw + 'kW</p>' +
       '<p>Connection type: ' + chargingPoint.connection_type_title + '</p>' +
       '<p>Operator Info: ' + chargingPoint.operator_info_title + '</p>' +
       '</div>' +
       '<div class="infowindow_item">' +
-      '<h2><span>Payment Information</span>' + '</h2>' +
+      '<h2><span><i class="fa-regular fa-credit-card"></i> Payment Information</span>' + '</h2>' +
       '<p>Pay at location? ' + chargingPoint.pay_at_location + '</p>' +
       '<p>Usage Type ' + chargingPoint.usage_type + '</p>' +
       '<p>Usage Cost ' + chargingPoint.usage_cost + '</p>' +
       '</div>' +
       '<div class="infowindow_item info_field">' +
-      '<h2><span>Community Information</span> ' + '</h2>' +
+      '<h2><span><i class="fa-regular fa-comment-dots"></i> Community Information</span> ' + '</h2>' +
       '<textarea class="infowindow_text_area">' + '</textarea>'+
       '</div>' +
     '</div>'

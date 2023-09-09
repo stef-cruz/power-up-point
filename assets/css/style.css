@@ -122,7 +122,7 @@ a:hover {
 }
 
 .hamburger.is-active:after {
-    transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-12px, -8px);
 }
 
 .hamburger.is-active .bar {
@@ -307,8 +307,10 @@ textarea {
 
 .feature-container {
     flex-basis: 30%;
-    margin-top: 3rem;
+    margin: 3rem auto;
     padding: 0 3em;
+    max-width: 1000px;
+    min-width: 300px;
 }
 
 .feature-container p {
@@ -323,9 +325,12 @@ textarea {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 3em 3em;
+    margin: 3em auto;
     padding: 0;
+    max-width: 1000px;
+    min-width: 300px;
 }
+
 
 .feature-container_text {
     display: flex;
