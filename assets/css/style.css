@@ -321,10 +321,14 @@ textarea {
 }
 
 @media (min-width: 1000px) {
-    .reason {
+    .reason, .reason-extra {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        height: 4em;
+    }
+    .reason-icon {
+        margin-right: 2em;
     }
 }
 
