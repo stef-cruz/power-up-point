@@ -211,30 +211,41 @@ footer {
 }
 
 /* Contact Us page specific */
-.contact-reasons {
-    display: flex;
-    flex-direction: column;
-}
 
-.reason-container {
-    margin-right: 1em;
-    display: flex;
-    flex-direction: row;
-}
 .reason {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 6em;
+    margin-bottom: 2em;
+}
+
+.reason-extra {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7.2em;
+    margin-bottom: 1em;
 }
 
 .reason-icon {
     margin: 0 auto;
-    font-size: 2em;
     display: block;
     text-align: center;
     width: 2em;
     height: 1.5em;
     padding: 0.2em;
-    border-radius: 10px;
-    background: #41B914;
+}
+
+.reason-icon > i {
+    color: #E06315;
+    font-size: 2em;
+}
+
+.reason > p {
+    display: inline-block;
 }
 
 .form-container {
@@ -244,7 +255,7 @@ footer {
     margin-bottom: 3em;
     width: 20em;
     padding: 1em;
-    border: 3px solid #E06315;
+    background: rgba(53, 151, 16, 0.35);
     border-radius: 10px;
     /* Add shadow if time */
 }
