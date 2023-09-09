@@ -354,7 +354,12 @@ textarea {
 
 #team-intro {
     line-height: 1.4;
-    padding: 2em 15vw;
+    padding: 2em 5vw 0.5em;
+    background-color: rgba(53, 151, 16, 0.35);
+    width: 80%;
+    margin: 3em auto 0;
+    border-radius: 10px;
+    max-width: 47em;
 }
 
 #team-intro div {
