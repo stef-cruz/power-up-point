@@ -316,16 +316,20 @@ textarea {
 
 #submit-button {
     margin: 0 auto;
-    width: 8em;
+    width: 6em;
     padding: 0.5em;
-    border-radius: 5px;
+    border-radius: 10px;
     position: absolute;
     right: 20px;
     bottom: 20px;
+    background-color: #E06315;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 #comment {
-    margin-bottom: 4em;
+    margin-bottom: 5em;
 }
 
 @media (min-width: 500px) {
@@ -334,6 +338,12 @@ textarea {
     }
     form {
         margin-left: 1em;
+    }
+    textarea {
+        width: 24em;
+    }
+    input {
+        width: 18em;
     }
 }
 
@@ -360,8 +370,11 @@ textarea {
     }
     form {
         margin: 0 auto;
-        width: 20em;
+        width: 22em;
         margin-top: 3em;
+    }
+    #submit-button {
+        right: 40px;
     }
     
 }
