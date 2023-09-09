@@ -329,10 +329,6 @@ form {
   display: block;
 }
 
-input {
-  width: 14em;
-}
-
 select {
   width: 18em;
   margin-left: 2em;
@@ -362,10 +358,6 @@ textarea {
     margin-bottom: 5em;
 }
 
-.center_radio_buttons {
-    margin-right: 135px;
-}
-
 .center-radio-buttons label {
     padding-right: 5px; 
 }
@@ -379,9 +371,6 @@ textarea {
     }
     textarea {
         width: 24em;
-    }
-    input {
-        width: 18em;
     }
 }
 
@@ -732,6 +721,7 @@ textarea {
     margin: 0;
     width: 80%;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .user_input_container {
