@@ -353,8 +353,17 @@ textarea {
 /* About Us page specific */
 
 #team-intro {
-    font-size: 1.6em;
-    padding: 2em;
+    line-height: 1.4;
+    padding: 2em 15em;
+}
+
+#team-intro div {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#team-intro div i {
+    color: #41B914;
 }
 
 #team-container {
