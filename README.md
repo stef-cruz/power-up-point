@@ -45,7 +45,7 @@ This project was created by **GreenerToday** and is deployed and can be accessed
 PowerUpPoint is a site to assist Electric Vehicle users in locating a charging point, in a particular locality, which is suited to their vehicle.
 
 ### Responsive Mockup
-[Static image with variety of opened pages](screenprint)
+[Static image with variety of opened pages](responsiveness-sp1.png)
 
 [Dynamic responsiveness view](https://ui.dev/amiresponsive?url=https://stef-cruz.github.io/power-up-point/index.html)
 
@@ -240,14 +240,15 @@ An open-source charging point dataset was identified by the team, this provided 
 [Dataset provider details](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-opendata1.jpg)
 
 <br>
-[Evidence of data currency - regular updates](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-opendata2.jpg)
+[Evidence of data currency - regular updates](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-opendata2.png)
 <br>
-[with open access via API]((https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-opendata3.jpg))
+[with open access via API](https://github.com/stef-cruz/power-up-point/blob/main/assets/readme_files/sp-opendata3.png)
+
 
 
 ## Technologies used
 Figma (for wireframes)
-HTL
+HTML
 CSS
 Javascript
 
